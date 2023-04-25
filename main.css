@@ -1,0 +1,2748 @@
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+}
+::-webkit-scrollbar{background-color: green;}
+::-webkit-scrollbar-thumb {background-color: green; }
+::-webkit-scrollbar-track {background-color: rgb(128, 128, 128);}
+
+*:focus {outline: none;}
+
+:root {
+    --coler-green :#58BA2B;
+    --coler-oring :orange;
+}
+
+*{font-family:"Josefin Sans";}
+
+
+
+/* *, *::before, *::after {
+transition: all 0.2s linear;
+} */
+
+a { text-decoration: none;}
+
+ul {
+list-style: none;
+margin: 0%;
+padding: 0%;
+}
+
+.container { 
+padding-left: 60px;
+padding-right: 60px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+ @media (max-width:768px) {
+.container {
+width: 100%;
+padding-left: 20px;
+padding-right: 20px;
+}}
+
+.Page  {
+position: relative;
+} 
+@media (max-width:1286px) {
+    .Page {
+    overflow: hidden;
+    }}
+
+
+/* Start Header */
+
+.Header {
+position: relative;
+box-shadow: 0 0 4px #ccc;
+min-height: 70px;
+z-index: 1000;
+background-color: white;
+
+
+}
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+ 
+.Header  .Menü {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 70px;
+width: 70px;
+position: absolute;
+right: 7%;
+cursor: pointer;
+transition: 0.5s;
+}
+
+@media (min-width: 1286px) {
+.Header .Menü  { display: none;}
+}  
+
+
+.Header .Menü::before {
+content: " ";
+position: absolute;
+background-color: rgba(0, 0, 0, 0.459);
+width: 100vw;
+min-height: 1300px;
+right:  -100%;
+top: 0%;
+z-index: 250;
+opacity: 0;
+visibility: hidden;
+}
+@media (max-width: 992px) {
+
+.Header .Menü:hover::before { right:-100% ; width: 200vw; min-height:2200px;}
+} 
+.Header .media-menü {
+position: absolute;
+width: 550px;
+min-height: 300px;
+background-color:white;
+padding: 25px 45px 40px 45px;
+right:  -1000px;
+border-left: 2px solid green;
+z-index: 300;
+top: 0%;
+transition: 0.5s;
+}
+
+
+.Header .Menü:hover  .media-menü{
+    right: -95px;
+}
+@media (max-width:992px) {
+    .Header .Menü:hover  .media-menü {
+    right:-70px ;
+    }}
+
+
+
+
+.Header .media-menü span:hover  {
+color: green;
+}
+.Header .Menü:hover::before {
+opacity: 5;
+visibility: visible;
+}
+
+.Header .media-menü .i { 
+text-align: right;
+
+}
+.Header .media-menü .i:hover { 
+color: green;
+}
+.Header .media-menü .i i{ 
+position: relative;
+font-size: 22px;
+}
+.media-menü .media-fotos ul {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-wrap: wrap;
+column-gap: 25px;
+}
+.media-menü .media-fotos img{
+width: 215px;
+height: 115px;
+
+}
+@media (max-width:768px) {
+    .media-menü .media-fotos img{
+        width: 146px;
+        height: 80px;
+        
+}
+    .media-menü {
+      max-width: 410px;
+        
+
+}
+.Header .Menü:hover  .media-menü{
+    left:-300px;
+    }
+
+}
+.media-menü .foto span{
+position: relative;
+display: block;
+text-align: center;
+top: -25px;
+}
+.media-menü .media-option {
+display: block;
+padding: 0px 0px  20px 0px;
+}
+.media-menü .media-option li{
+padding: 15px 0px;
+border-bottom: #ccc solid 1px;
+}
+
+.media-menü .media-option li:hover{
+color: green;
+}
+.media-menü .media-option #li:first-child{
+border-top: #ccc solid 1px;
+}
+.media-menü .media-option li i {
+margin: 0px 3px 0px 10px ; 
+width: 20px;
+height: 20px;
+
+}
+.media-menü .media-option li i:nth-child(3) {
+position: absolute;
+right: 5%;
+width: 40px;
+
+}
+.Header  .Menü p{
+font-size: 22px;
+}
+.Header  .Menü i{
+font-size: 20px;
+margin-left: 10px;
+}
+
+.shop-Ho .shop-H,
+.Händler-Ho .Händler-H,
+.My-Porsche-Ho .My-Porsche-H ,
+.Mehr-Ho .Mehr-H,
+.Mehr-Ho .Services-Ho .Services-H ,
+.Mehr-Ho .Erleben-Ho .Erleben-H,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H ,
+.P718-Ho .P718-H ,
+.P911-Ho .P911-H ,
+.Ptaycan-Ho .Ptaycan-H ,
+.Panamera-Ho .Panamera-H ,
+.macan-Ho .macan-H ,
+.Cayenne-Ho .Cayenne-H {
+position: absolute;
+display: block;
+width: 100%;
+min-height: 100%;
+background-color: white;
+z-index: 1000;
+top: 0%;
+padding:30px 35px;
+left:  600px;
+transition: 0.3s;
+border-left: 1px solid green;
+}
+
+.shop-Ho:hover .shop-H,                         
+.Händler-Ho:hover .Händler-H,
+.My-Porsche-Ho:hover .My-Porsche-H  ,
+.Mehr-Ho:hover .Mehr-H ,
+.Mehr-Ho .Services-Ho:hover .Services-H  ,
+.Mehr-Ho .Erleben-Ho:hover .Erleben-H ,
+.Mehr-Ho .Unternehmen-Ho:hover .Unternehmen-H  ,
+.P718-Ho:hover .P718-H  ,
+.P911-Ho:hover .P911-H  ,
+.Ptaycan-Ho:hover .Ptaycan-H  ,
+.Panamera-Ho:hover .Panamera-H  ,
+.macan-Ho:hover .macan-H  ,
+.Cayenne-Ho:hover .Cayenne-H  {
+left: -1.5px;
+
+}
+.shop-Ho .shop-H-Count,
+.Händler-Ho .Händler-H-Count ,
+.My-Porsche-Ho .My-Porsche-H-Count ,
+.Mehr-Ho .Mehr-H-Count,
+.Mehr-Ho .Services-Ho .Services-H-Count ,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count ,
+.P718-Ho .P718-H-Count ,
+.P911-Ho .P911-H-Count ,
+.Ptaycan-Ho .Ptaycan-H-Count ,
+.Panamera-Ho .Panamera-H-Count ,
+.macan-Ho .macan-H-Count ,
+.Cayenne-Ho .Cayenne-H-Count {
+color: black;
+}
+.shop-Ho .shop-H-Count .shop-head,
+.Händler-Ho .Händler-H-Count .Händler-head,
+.My-Porsche-Ho .My-Porsche-H-Count .My-Porsche-head,
+.Mehr-Ho .Mehr-H-Count .Mehr-head,
+.Mehr-Ho .Services-Ho .Services-H-Count .Services-head,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count .Erleben-head,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count .Unternehmen-head,
+.P718-Ho .P718-H-Count .P718-head,
+.P911-Ho .P911-H-Count .P911-head,
+.Ptaycan-Ho .Ptaycan-H-Count .Ptaycan-head,
+.Panamera-Ho .Panamera-H-Count .Panamera-head,
+.macan-Ho .macan-H-Count .macan-head,
+.Cayenne-Ho .Cayenne-H-Count .Cayenne-head{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 50px;
+}
+
+.shop-Ho .shop-H-Count .shop-head i,
+.Händler-Ho .Händler-H-Count .Händler-head i,
+.My-Porsche-Ho .My-Porsche-H-Count .My-Porsche-head i,
+.Mehr-Ho .Mehr-H-Count .Mehr-head i,
+.Mehr-Ho .Services-Ho .Services-H-Count .Services-head i,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count .Erleben-head i,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count .Unternehmen-head i,
+.P718-Ho .P718-H-Count .P718-head i,
+.P911-Ho .P911-H-Count .P911-head i,
+.Ptaycan-Ho .Ptaycan-H-Count .Ptaycan-head i,
+.Panamera-Ho .Panamera-H-Count .Panamera-head i,
+.macan-Ho .macan-H-Count .macan-head i,
+.Cayenne-Ho .Cayenne-H-Count .Cayenne-head i{
+font-size: 22px;
+}
+.shop-Ho .shop-H-Count .shop-head i:hover,
+.Händler-Ho .Händler-H-Count .Händler-head i:hover,
+.My-Porsche-Ho .My-Porsche-H-Count .My-Porsche-head i:hover,
+.Mehr-Ho .Mehr-H-Count .Mehr-head i:hover,
+.Mehr-Ho .Services-Ho .Services-H-Count .Services-head i:hover,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count .Erleben-head i:hover,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count .Unternehmen-head i:hover,
+.P718-Ho .P718-H-Count .P718-head i:hover,
+.P911-Ho .P911-H-Count .P911-head i:hover,
+.Ptaycan-Ho .Ptaycan-H-Count .Ptaycan-head i:hover,
+.Panamera-Ho .Panamera-H-Count .Panamera-head i:hover,
+.macan-Ho .macan-H-Count .macan-head i:hover,
+.Cayenne-Ho .Cayenne-H-Count .Cayenne-head i:hover{
+color: green;
+}
+.shop-Ho .shop-H-Count .shop-head span ,
+.Händler-Ho .Händler-H-Count .Händler-head span ,
+.My-Porsche-Ho .My-Porsche-H-Count .My-Porsche-head span ,
+.Mehr-Ho .Mehr-H-Count .Mehr-head span,
+.Mehr-Ho .Services-Ho .Services-H-Count .Services-head span ,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count .Erleben-head span,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count .Unternehmen-head span ,
+.P718-Ho .P718-H-Count .P718-head span ,
+.P911-Ho .P911-H-Count .P911-head span ,
+.Ptaycan-Ho .Ptaycan-H-Count .Ptaycan-head span ,
+.Panamera-Ho .Panamera-H-Count .Panamera-head span ,
+.macan-Ho .macan-H-Count .macan-head span ,
+.Cayenne-Ho .Cayenne-H-Count .Cayenne-head span {
+font-size: 18px;
+}
+.shop-Ho .shop-H-Count .shop-head span i,
+.Händler-Ho .Händler-H-Count .Händler-head span i,
+.My-Porsche-Ho .My-Porsche-H-Count .My-Porsche-head span i,
+.Mehr-Ho .Mehr-H-Count .Mehr-head span i,
+.Mehr-Ho .Services-Ho .Services-H-Count .Services-head span i,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count .Erleben-head span i,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count .Unternehmen-head span i,
+.P718-Ho .P718-H-Count .P718-head span i,
+.P911-Ho .P911-H-Count .P911-head span i,
+.Ptaycan-Ho .Ptaycan-H-Count .Ptaycan-head span i,
+.Panamera-Ho .Panamera-H-Count .Panamera-head span i,
+.macan-Ho .macan-H-Count .macan-head span i,
+.Cayenne-Ho .Cayenne-H-Count .Cayenne-head span i{
+font-size: 18px;
+margin-right: 10px;
+transform: rotate(180deg) translateY(2px);
+}
+.shop-Ho .shop-H-Count h3,
+.Händler-Ho .Händler-H-Count h3,
+.My-Porsche-Ho .My-Porsche-H-Count h3,
+.Mehr-Ho .Mehr-H-Count h3,
+.Mehr-Ho .Services-Ho .Services-H-Count h3,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count h3,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count h3{
+font-size: 40px;
+border-bottom: 1px solid black;
+padding-bottom: 10px;
+margin-bottom: 15px;
+}
+.My-Porsche-Ho .My-Porsche-H-Count h3{
+margin-bottom: 45px;
+}
+.shop-Ho .shop-H-Count p,
+.My-Porsche-Ho .My-Porsche-H-Count p,
+.Mehr-Ho .Services-Ho .Services-H-Count p,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count ,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count p{
+padding: 15px 0px;
+border-bottom: 1px solid #ccc;
+font-size: 17px;
+}
+
+.shop-Ho .shop-H-Count p:hover,
+.My-Porsche-Ho .My-Porsche-H-Count p:not(.p):hover,
+.Mehr-Ho .Services-Ho .Services-H-Count p:hover,
+.Mehr-Ho .Erleben-Ho .Erleben-H-Count p:hover,
+.Mehr-Ho .Unternehmen-Ho .Unternehmen-H-Count p:hover{
+color: green;
+}
+
+.Händler-H-Count form  {
+position: relative;
+width: 100%;
+height: 58px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px 0px 40px;
+}
+.Händler-H-Count form input {
+width: 100%;
+height: 50px;
+padding-left: 20px;
+border: 1px solid black;
+caret-color: green;
+font-size: 18px;
+
+}
+.Händler-H-Count form input:focus-within   {
+outline: 1px black solid;
+outline-offset: 3px;
+}
+.Händler-H-Count form i {
+position: absolute;
+right: 8px;
+font-size: 16px;
+}
+
+.Händler-H-Count .text span  {
+font-size: 18px;
+margin-bottom: 15px;
+}
+
+.Händler-H-Count  .text p {
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: start;
+align-items: center;
+text-align: left;
+border: 1px solid black;
+font-size: 18px;
+color: black;
+margin-top: 8px;
+transition: 0.2s;
+}
+.Händler-H-Count  .text p:hover {
+background-color: black;
+color: white;
+}
+.Händler-H-Count .text p i{
+    font-size: 16px;
+margin: 0px 10px 0px 20px;
+}
+
+.My-Porsche-Ho .My-Porsche-H-Count .spa{
+display: flex;
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .spa .sp{
+padding: 14px 13px;
+border: 1px solid black;
+display:flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 10px;
+font-size: 16px;
+transition: 0.2s;
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .spa .sp i{
+margin: 0px 5px 0px 0px;
+font-size: 18px;
+
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .spa .sp:first-child{
+background-color: red;
+color: white;
+margin-right: 15px;
+transition: 0.2s;
+border: 2px solid transparent;
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .spa .sp:first-child:hover{
+background-color: rgb(125, 3, 3);
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .spa span {
+font-size: 16px;
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .spa .sp:last-child:hover{
+background-color: #000;
+color: white;
+} 
+.My-Porsche-Ho .My-Porsche-H-Count .p span {
+border-bottom: 2px black solid;
+line-height: 1.7;} 
+
+
+.Mehr-Ho .Mehr li .mhr {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.Mehr-Ho .Mehr li .mhr span{
+font-size: 18px;
+}
+
+.P718-Ho .head ,
+.P911-Ho .head ,
+.Ptaycan-Ho .head ,
+.Panamera-Ho .head ,
+.macan-Ho .head ,
+.Cayenne-Ho .head {
+display: flex;
+margin: 25px 0px 10px;
+align-items: center;
+}  
+.P718-Ho .head p:first-child ,
+.P911-Ho .head p:first-child ,
+.Ptaycan-Ho .head p:first-child ,
+.Panamera-Ho .head p:first-child ,
+.macan-Ho .head p:first-child ,
+.Cayenne-Ho .head p:first-child {
+font-size: 45px;
+padding: 0px 20px 0px 0px;
+border-right: 2px solid #eee;
+} 
+.P718-Ho .head p:last-child ,
+.P911-Ho .head p:last-child ,
+.Ptaycan-Ho .head p:last-child ,
+.Panamera-Ho .head p:last-child ,
+.macan-Ho .head p:last-child ,
+.Cayenne-Ho .head p:last-child {
+font-size: 14px;
+padding: 15px 10px;
+text-align: center;
+} 
+.P718-Ho .head p i,
+.P911-Ho .head p i,
+.Ptaycan-Ho .head p i,
+.Panamera-Ho .head p i,
+.macan-Ho .head p i,
+.Cayenne-Ho .head p i{
+margin-right: 10px;
+font-size: 14px;
+
+}  
+.P718-Ho .text p  ,
+.P911-Ho .text p  ,
+.Ptaycan-Ho .text p  ,
+.Panamera-Ho .text p  ,
+.macan-Ho .text p  ,
+.Cayenne-Ho .text p  {
+display: flex;
+cursor: pointer;
+border: 1px solid black; 
+font-size: 15.5px;
+padding: 13px 0px 13px 0px;
+margin-bottom: 15px;
+text-align: left;
+
+}
+
+.P718-Ho .text p:hover  ,
+.P911-Ho .text p:hover  ,
+.Ptaycan-Ho .text p:hover  ,
+.Panamera-Ho .text p:hover  ,
+.macan-Ho .text p:hover  ,
+.Cayenne-Ho .text p:hover  {
+background-color: green;
+color: white;
+}
+.P718-Ho .text p i ,
+.P911-Ho .text p i ,
+.Ptaycan-Ho .text p i ,
+.Panamera-Ho .text p i ,
+.macan-Ho .text p i ,
+.Cayenne-Ho .text p i {
+width: 20px;
+height: auto;
+margin-right: 13px;
+margin-left: 18px;
+} 
+
+.P718-Ho ul ,
+.P911-Ho ul ,
+.Ptaycan-Ho ul ,
+.Panamera-Ho ul ,
+.macan-Ho ul ,
+.Cayenne-Ho ul {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+column-gap: 20px;
+} 
+.P718-Ho ul span,
+.P911-Ho ul span,
+.Ptaycan-Ho ul span,
+.Panamera-Ho ul span,
+.macan-Ho ul span,
+.Cayenne-Ho ul span{
+position: relative;
+display: block;
+text-align: center;
+top: 0px;
+font-size: 20px;
+} 
+@media (max-width:768px) {
+   .P718-Ho ul span,
+.P911-Ho ul span,
+.Ptaycan-Ho ul span,
+.Panamera-Ho ul span,
+.macan-Ho ul span,
+.Cayenne-Ho ul span{
+font-size: 15px;
+} 
+        
+}
+    
+        
+
+
+
+.P718-Ho img,
+.P911-Ho img,
+.Ptaycan-Ho img,
+.Panamera-Ho img,
+.macan-Ho img,
+.Cayenne-Ho img{
+margin-bottom: 10px;
+} 
+.P718-Ho .end,
+.P911-Ho .end,
+.Ptaycan-Ho .end,
+.Panamera-Ho .end,
+.macan-Ho .end,
+.Cayenne-Ho .end{
+cursor: pointer;
+border: 1px solid black; 
+font-size: 16.5px;
+padding: 13px 20px 13px 0px;
+margin-top: 45px;
+} 
+
+.P718-Ho .end:hover  ,
+.P911-Ho .end:hover  ,
+.Ptaycan-Ho .end:hover  ,
+.Panamera-Ho .end:hover  ,
+.macan-Ho .end:hover  ,
+.Cayenne-Ho .end:hover  {
+background-color: green;
+color: white;
+}
+.P718-Ho .end i,
+.P911-Ho .end i,
+.Ptaycan-Ho .end i,
+.Panamera-Ho .end i,
+.macan-Ho .end i,
+.Cayenne-Ho .end i{
+font-size: 16px;
+margin-right: 10px;
+} 
+
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-media-menü xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+
+
+/* {} */
+
+ .Logo  {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 135px;
+height: 135px;
+background-color: white;
+border: 1px solid #eee;
+box-shadow: 0 0 10px #777;
+top: 0%;
+z-index: 200;
+ }
+
+.Header .container  {
+display: flex;
+justify-content: space-between;
+align-items: center;   
+
+}
+
+@media (max-width: 1286px) {
+.Header .container .Header-left .Cars ,.Header-Right ul  { display:none ;}
+.Header .Logo  { height: 90px;}
+}  
+@media (max-width: 767px) {
+.Header .Logo  { height: 70px; width: 90px;}
+.Header .Logo  img{ height: 50px;}
+.Header {min-height: 60px;}
+.Header .Menü p ,i{font-size: 18px;}
+
+} 
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+.Header-left .Cars  {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 160px;z-index: -1;
+
+}
+.Header-left .Cars li  {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 112px;
+border-bottom: 2px solid transparent;
+margin-top: 5px;    margin-left: 8px;
+
+}
+.Header-left .Cars li:hover  {
+border-bottom: 2px solid green;
+color: green;
+}
+.Header-left .Cars li span {
+position: relative;
+top: -8px;
+}
+
+.P718{ 
+ 
+position: absolute;
+visibility: hidden;
+min-height: 480px;
+width: 100%;
+left: 0%;
+top: 100%;
+border-bottom: 2px solid green;
+background-color: white;
+transition: 0.1s;
+color: black;
+transform: translateY(30px);
+z-index: 100;
+border-top: 2px solid #ccc;
+opacity: 0.5;
+
+}
+.P911 { 
+position: absolute;
+visibility: hidden;
+min-height: 680px;
+width: 100%;
+left: 0%;
+top: 100%;
+border-bottom: 2px solid green;
+background-color: white;
+transition: 0.1s;
+color: black;
+transform: translateY(30px);
+z-index: 100;
+opacity: 0.5;
+border-top: 2px solid #ccc;
+
+}
+.Ptaycan ,
+.Panamera,
+.Macan,
+.Cayenne{ 
+position: absolute;
+visibility: hidden;
+min-height: 460px;
+width: 100%;
+left: 0%;
+top: 100%;
+border-bottom: 2px solid green;
+border-top: 2px solid #ccc;
+background-color: white;
+transition: 0.1s;
+color: black;
+transform: translateY(30px);
+opacity: 0.5; 
+}
+.H718::before,
+.H911::before,
+.Htaycan::before,
+.HPanamera::before,
+.HMacan::before,
+.HCayenne::before{ 
+content: " ";
+position: absolute;
+background-color: rgba(0, 0, 0, 0.463);
+width: 100%;
+min-height: 1300px;
+left: 0%;
+top: 100%;
+opacity: 0;
+visibility: hidden; 
+} 
+.Cars .H718:hover::before,
+.Cars .H911:hover::before,
+.Cars .Htaycan:hover::before,
+.Cars .HPanamera:hover::before,
+.Cars .HMacan:hover::before,
+.Cars .HCayenne:hover::before{
+opacity: 5;
+visibility: visible;
+} 
+
+.Cars .H718:hover .P718,
+.Cars .H911:hover .P911,
+.Cars .Htaycan:hover .Ptaycan,
+.Cars .HPanamera:hover .Panamera,
+.Cars .HMacan:hover .Macan,
+.Cars .HCayenne:hover .Cayenne{
+opacity: 5;
+visibility: visible;
+transform: translateY(0px);
+} 
+
+
+
+.P718 .container{ 
+display: flex;
+justify-content: flex-start;
+align-items: normal;
+border-bottom: 2px solid #eee;
+padding-bottom: 65px;
+}
+.P911 .container{ 
+display: flex;
+justify-content: flex-start;
+align-items: normal;
+border-bottom: 2px solid #eee;
+padding-bottom: 55px;
+}
+.Ptaycan .container,
+.Panamera .container,
+.Macan .container, 
+.Cayenne .container{ 
+display: flex;
+justify-content: flex-start;
+align-items: normal;
+border-bottom: 2px solid #eee;
+padding-bottom: 45px;
+}
+.P718 .container .imge,
+.P911 .container .imge, 
+.Ptaycan .container .imge,
+.Panamera .container .imge, 
+.Macan .container .imge, 
+.Cayenne .container .imge{ 
+height: 350px;
+background-color: #58BA2B;
+
+}
+.P718 .container .imge img,
+.P911 .container .imge img, 
+.Ptaycan .container .imge img,
+.Panamera .container .imge img, 
+.Macan .container .imge img, 
+.Cayenne .container .imge img{ 
+height: 105%;
+}
+.P718 .container .Hover-head,
+.P911 .container .Hover-head, 
+.Ptaycan .container .Hover-head,
+.Panamera .container .Hover-head, 
+.Macan .container .Hover-head, 
+.Cayenne .container .Hover-head{ 
+display: block;
+}
+.P718 .container .head,
+.P911 .container .head, 
+.Ptaycan .container .head ,
+.Panamera .container .head , 
+.Macan .container .head , 
+.Cayenne .container .head { 
+display: flex;
+margin: 25px 0px 10px;
+align-items: center;
+}
+.P718 .container .head p:first-child,
+.P911 .container .head p:first-child, 
+.Ptaycan .container .head p:first-child,
+.Panamera .container .head p:first-child, 
+.Macan .container .head p:first-child, 
+.Cayenne .container .head p:first-child{ 
+font-size: 45px;
+padding: 0px 20px 0px 0px;
+border-right: 2px solid #eee;
+
+}
+.P718 .container .head p:last-child,
+.P911 .container .head p:last-child, 
+.Ptaycan .container .head p:last-child,
+.Panamera .container .head p:last-child, 
+.Macan .container .head p:last-child, 
+.Cayenne .container .head p:last-child{ 
+font-size: 12px;
+padding: 15px 20px;
+text-align: center;
+}
+.P718 .container .head p i,
+.P911 .container .head p i, 
+.Ptaycan .container .head p i,
+.Panamera .container .head p i, 
+.Macan .container .head p i, 
+.Cayenne .container .head p i{ 
+margin-right: 5px;
+}
+
+.P718 .container .option,
+.P911 .container .option, 
+.Ptaycan .container .option,
+.Panamera .container .option, 
+.Macan .container .option, 
+.Cayenne .container .option{ 
+display: flex;
+}
+.P718 .container .text,
+.P911 .container .text, 
+.Ptaycan .container .text,
+.Panamera .container .text, 
+.Macan .container .text, 
+.Cayenne .container .text{ 
+    margin-right: 20px;
+}
+.P718 .container .text p,
+.P911 .container .text p,
+.Ptaycan .container .text p ,
+.Panamera .container .text p,
+.Macan .container .text p,
+.Cayenne .container .text p{
+    cursor: pointer;
+    border-bottom: 1px solid #ccc; 
+    font-size: 16.5px;
+    padding: 16px 20px 16px 0px;
+    
+}
+.P718 .container .text p:first-child,
+.P911 .container .text p:first-child,
+.Ptaycan .container .text p:first-child,
+.Panamera .container .text p:first-child,
+.Macan .container .text p:first-child,
+.Cayenne .container .text p:first-child{
+border-top: 1px solid #ccc; 
+
+}
+.P718 .container .text p:hover,
+.P911 .container .text p:hover,
+.Ptaycan .container .text p:hover,
+.Panamera .container .text p:hover,
+.Macan .container .text p:hover,
+.Cayenne .container .text p:hover{
+color: green;
+}
+.P718 .container .text p i,
+.P911 .container .text p i, 
+.Ptaycan .container .text p i,
+.Panamera .container .text p i, 
+.Macan .container .text p i, 
+.Cayenne .container .text p i{ 
+width: 20px;
+height: auto;
+margin-right: 10px;
+}
+.P718 .container .text2,
+.P911 .container .text2, 
+.Ptaycan .container .text2,
+.Panamera .container .text2, 
+.Macan .container .text2, 
+.Cayenne .container .text2{ 
+margin-left: 20px;
+}
+.P718 .container .text2 p,
+.P911 .container .text2 p, 
+.Ptaycan .container .text2 p,
+.Panamera .container .text2 p, 
+.Macan .container .text2 p, 
+.Cayenne .container .text2 p{ 
+position: relative;
+cursor: pointer;
+width: 300px;
+border: 1px solid black;
+padding: 12px 30px 12px 12px;
+margin-bottom: 6px;
+}
+.P718 .container .text2 p:not(:last-child):hover,
+.P911 .container .text2 p:not(:last-child):hover, 
+.Ptaycan .container .text2 p:not(:last-child):hover,
+.Panamera .container .text2 p:not(:last-child):hover, 
+.Macan .container .text2 p:not(:last-child):hover, 
+.Cayenne .container .text2 p:not(:last-child):hover{ 
+background-color: green;
+border: 1px solid white;
+color: white;
+}
+.P718 .container .text2 i,
+.P911 .container .text2 i, 
+.Ptaycan .container .text2 i,
+.Panamera .container .text2 i, 
+.Macan .container .text2 i, 
+.Cayenne .container .text2 i{ 
+font-size: 18px;
+margin-right: 12px;
+}
+
+.P718 .container .text2 p:last-child,
+.P911 .container .text2 p:last-child, 
+.Ptaycan .container .text2 p:last-child,
+.Panamera .container .text2 p:last-child, 
+.Macan .container .text2 p:last-child, 
+.Cayenne .container .text2 p:last-child{ 
+border: 0px solid white;
+position: absolute;
+bottom: 0px;
+padding: 15px 30px 15px 12px;
+}
+.P718 .container .text2 p:last-child:hover,
+.P911 .container .text2 p:last-child:hover, 
+.Ptaycan .container .text2 p:last-child:hover,
+.Panamera .container .text2 p:last-child:hover, 
+.Macan .container .text2 p:last-child:hover, 
+.Cayenne .container .text2 p:last-child:hover{ 
+color: green;
+}
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-left xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+.Header-Right ul   {
+display: flex;
+}
+@media (max-width: 1286px) {
+.Header-Right ul  { display:none ;}
+} 
+.Header-Right ul li {
+margin-top: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 112px;
+
+}
+.Header-Right ul li:hover{
+color: green;
+
+}
+.Header-Right ul li:not(:last-child) {
+margin-right: 22px;
+}
+.Header-Right ul li i {
+font-size: 18px;
+}
+.Header-Right ul li i:not(:last-child) {
+margin-right: 10px;
+}
+.Header-Right ul li:last-child {
+border-bottom: 2px solid transparent;
+padding-left: 0px;
+}
+.Header-Right ul li:last-child:hover {
+border-bottom: 2px solid green;
+
+}
+.Header-Right ul li:first-child {
+border-bottom: 2px solid transparent;
+
+
+}
+.Header-Right ul li:first-child:hover {
+border-bottom: 2px solid green;
+
+
+}
+.Header-Right ul li:last-child::before {
+content: " ";
+position: absolute;
+width: 1px ;
+height: 40%;
+background-color: rgba(0, 128, 0, 0.534);
+right: 7.5%;
+bottom: 50%;
+transform: translateY(50%);
+border-radius: 40%;
+}
+.Header-Right ul li:last-child i{
+padding-left:24px  ;
+padding-right:15px  ;
+font-size: 25px;
+}
+.Header-Right .Shop-count  {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0%;
+top: 100%;
+min-height: 450px;
+background-color: white;
+border-bottom: green 2px solid;
+z-index: -1;
+visibility: hidden;
+opacity: 0.2;
+transform: translateY(30px);
+transition: 0.1s linear 0.1s; 
+border-top: 2px solid #ccc;
+
+
+}
+.Header-Right .shop:hover .Shop-count  {
+transform: translateY(0px);
+visibility: visible;
+opacity: 5;
+}
+.Header-Right .Shop-count .container  {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+}
+.Header-Right .Shop-count .container h1 {
+position: relative;
+padding: 20px 0px;
+color: black;
+}
+.Header-Right .Shop-count .container h1::before {
+content: " ";
+position: absolute;
+width: 0%;
+height: 2px;
+left: 50%;
+transform: translateX(-50%);
+bottom: -10px;
+background-color: green;
+transition: 0.2s;
+border-radius: 40%;
+
+}
+.Header-Right .Shop-count:hover h1::before {
+width: 100%;
+}
+.Header-Right .Shop-count .container p {
+cursor: pointer;
+padding: 20px 0px;
+color: black;
+}
+.Header-Right .Shop-count .container p:hover {
+color: green;
+}
+.Header-Right .Htext-right .text-right {
+position: absolute;
+width: 100%;
+left: 0%;
+top: 100%;
+min-height: 450px;
+background-color: white;
+border-bottom: green 2px solid;
+z-index: -1;
+transform: translateY(30px);
+visibility: hidden;
+opacity: 0;
+transition: 0.2s linear 0.1s; 
+color: black;
+border-top: 2px solid #ccc;
+
+
+}
+.Header-Right .Htext-right:hover .text-right {
+transform: translateY(0px);
+visibility: visible;
+opacity: 5;
+}
+.Header-Right .text-right .container {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align:left ;
+gap: 60px;
+
+}
+.Header-Right .text-right .container .text5 {
+height: 650px;
+width: 250px;
+
+}
+.Header-Right .text-right .container h3{
+margin: 15px 0px;
+padding: 15px 0px ;
+border-bottom: 2px solid green;
+
+}
+.Header-Right .text-right .container p{
+padding: 11px 0px;
+cursor: pointer;
+
+}
+.Header-Right .text-right .container p:hover{
+color: green;
+
+}
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header-right xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+/* End Heder */
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Haeder2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Haeder2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Haeder2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx start Haeder2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+.titel  {
+width: 100%;
+padding: 40px 0px 8px;
+background-color: #eee;
+z-index: -1;
+}
+.icon  {
+width: 100%;
+position:sticky;
+top: 0px;
+background-color: #eee;
+color: white;
+padding-bottom: 10px;
+}
+.option-content{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+width: 20px;
+height: 20px;
+position: relative;
+background-color: green;
+transition: 0.2s;
+}
+
+.icon .H123 {
+
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+bottom: 8px;
+color: green;
+display: none;
+text-align: center;
+font-size: 20px;
+width: 100%;
+}
+
+.icon .H123 i{
+display: block;
+}
+
+.H1234 {
+display: none;
+position: absolute;
+left: 0%;
+top: 100%;
+width: 100%;
+height: 150px;
+background-color: #ccc;
+}
+
+.H1234-countent {
+    position: relative;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+color: #000;
+top:50%;
+transform: translateY(-50%);
+}
+.H1234-countent h1{
+font-size: 25px;
+width: 400px;
+font-weight: 800;
+}
+.H1234-countent p i{
+margin-right: 8px;}
+
+
+
+.option-content:hover{
+background-color: #777;
+}
+.option-content:hover .option-menü{
+visibility: visible;
+opacity: 5;
+}
+
+.option-menü {
+position: absolute;
+visibility: hidden;
+opacity: 0;
+background-color: #777;
+width: 350px;
+top: 100%;
+left: 0%;
+}
+@media (max-width: 767px) {
+.option-menü  {left: -20px;
+width: 380px;}
+} 
+.option-menü p{
+display: flex;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+padding: 25px 30px;
+border-top: 1px #eee solid;
+}
+.option-menü p:hover{
+background-color: green;
+
+}
+.option-menü p:first-child{
+border-top: none;
+background-color: green;
+}
+.option-menü p i{
+margin-left: 20px;
+}
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx end Header2 xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx Start content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx Start content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx Start content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx Start content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+/* .content {
+}  */
+
+.content h1 {
+margin-bottom: 50px;
+margin-top: 30px;
+}
+
+.content .Deep-content {
+display: flex;
+justify-content: flex-start;
+
+} 
+
+.content .fillter {
+border-right: rgba(0, 128, 0, 0.495) 2px solid;
+padding-right: 30px;
+padding-top: 30px;
+margin-right: 50px;
+
+}
+
+@media (max-width: 1199px) {
+.fillter  {display: none;
+}
+} 
+
+.content .fillter .flter {
+margin-bottom: 50px;
+} 
+.content .fillter .flter:first-child {
+margin-top: 10px;
+} 
+
+.content .fillter .flter h2 {
+margin-bottom: 15px;
+} 
+
+.content .fillter .flter p {
+padding: 15px;
+margin: 15px 30px 15px 0px;
+border: 1px solid #000;
+cursor: pointer;
+}
+
+.content .fillter .flter .Diesel {
+opacity: 0.2;
+cursor: default;
+}
+.content .fillter .flter .last {
+visibility: hidden;
+}
+
+.content .fillter .flter p i {
+margin-right: 8px;
+}
+.content .fillter .flter p:not(.Diesel):hover{
+color: green;
+border-color: green;
+}
+
+/* ##################### filter side ########################## */
+
+@media (min-width: 1199px) {
+    .Filter1  {display: none;
+    }
+
+} 
+
+
+.Filter1  {width: 80px;
+}
+
+@media (max-width:500px) {
+
+    .Filter1  {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+} 
+
+.Filter1:hover  .Filt-count{
+right: 0%;
+cursor: pointer;
+
+}
+
+.Filter1::before {
+    content: " ";
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.459);
+    width: 100vw;
+    min-height: 1300px;
+    right:  0%;
+    top: 0%;
+    z-index: 250;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+
+.Filter1:hover::before {
+ opacity: 5;
+visibility: visible;
+}
+
+.Filt-count{
+position: fixed;
+display: block;
+width: 500px;
+height: 100vh;
+background-color: white;
+z-index: 1000;
+top: -0%;
+right:  -150%;
+transition: 0.3s;
+border-left: 1px solid green;
+overflow-y: scroll;
+transition: 0.3s linear ;
+}
+@media (max-width: 500px) {
+    .Filt-count  {width: 400px;
+    }
+
+} 
+
+.Filt-count .F-h1 {
+width: 100%;
+padding: 10px 0px;
+margin: 0%;
+box-shadow: 1px 3px 5px 0px #eee;
+margin-bottom: 30px;
+font-weight: 400;
+} 
+.Filt-count .F-h1 i{
+padding:0px 10px 0px 30px;
+color: green;
+font-size: 18px;
+text-align: center;
+} 
+.fillter1 {
+min-height: 250px;
+padding:0px 30px 35px 30px ;
+}
+.Filt {
+width: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: green;
+color: white;
+padding:15px  20px;
+
+}
+.Filt i{
+margin-right: 10px;
+
+}
+.fillter1 .flter1{
+display: flex;
+align-items: center;
+justify-content: start;
+flex-wrap: wrap;
+}
+.fillter1  h2{
+font-size: 25px;
+margin-top: 20px;
+font-weight: 400;
+}
+.fillter1 .flter1 p{
+
+padding: 10px;
+margin: 8px;
+border: 1px solid #000;
+cursor: pointer;
+}
+.content .fillter1 .flter1 p:not(.Diesel):hover{
+color: green;
+border-color: green;
+}
+.content .fillter1 .flter1 .Diesel {
+opacity: 0.2;
+cursor: default;
+}
+.fillter1 .flter1 p i{
+margin-right: 8px;
+font-weight: 400;
+}
+.fillter1  .span{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-top: 50px;
+
+}
+.fillter1  span{
+width: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 22px;
+font-weight: 400;
+cursor: pointer;
+}
+.fillter1  span i{
+margin-right: 10px;
+
+}
+.fillter1  .s1{
+background-color: green;
+color: white;
+transition: 0.2s;
+
+}
+.fillter1  .s1:hover{
+background-color: #777;
+}
+.fillter1  .s2{
+margin-left: 10px;
+border: 1px solid #000;
+}
+.fillter1  .s2:hover{
+color: green;
+border-color: green;
+}
+
+
+
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx fillter xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx Cars-sendung xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+.Cars-sendung {
+flex: 1;
+margin:0px 35px;
+}
+@media (max-width: 1300px) {
+    .Cars-sendung   {margin: 0%;
+    }} 
+
+.Cars-sendung #cars h1 {
+font-size: 35px;
+font-weight: 400;
+margin-bottom: 20px;
+transition: 0.5s;
+cursor: pointer;
+width: fit-content;
+}
+@media (max-width: 767px) {
+    .Cars-sendung #cars h1   {
+        font-size: 25px;
+    }} 
+.Cars-sendung #cars h1:hover {
+color: green;
+}
+.Cars-sendung #cars h1 i{
+margin-right: 15px;
+
+/* animation: Modelle 0.5s linear infinite; */
+}
+
+/* @keyframes Modelle {
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(-50%); }
+} */
+
+.Cars-sendung .ul {
+display: grid;
+grid-template-columns: repeat(auto-Fill,minmax(280px,1fr));
+justify-content: center;
+gap: 10px;
+}
+
+@media (max-width: 1300px) {
+.Cars-sendung .ul  {grid-template-columns: repeat(auto-Fill,minmax(255px,1fr));
+    gap: 15px;
+    margin: 0%;
+}} 
+@media (max-width: 992px) {
+.Cars-sendung .ul  {grid-template-columns: repeat(auto-Fill,minmax(220px,1fr));
+    gap: 10px;
+}} 
+@media (max-width: 400px) {
+.Cars-sendung .ul  {grid-template-columns: repeat(auto-Fill,minmax(150px,1fr));
+    gap: 10px;
+}} 
+
+.Cars-sendung li {
+width: fit-content;
+display: flex;
+flex-direction: column;
+cursor: pointer;
+margin-bottom: 30px;
+}
+
+.Cars-sendung li img {
+width: 320px;
+margin-bottom: 20px;
+}
+
+@media (max-width: 1290px) {
+.Cars-sendung li img  {max-width: 280px;
+}} 
+@media (max-width: 992px) {
+.Cars-sendung li img  {max-width: 220px;
+}} 
+
+@media (max-width: 767px) {
+.Cars-sendung li img  {max-width: 220px;
+}} 
+@media (max-width: 400px) {
+.Cars-sendung li img  {max-width: 160px;
+}} 
+
+
+
+.Cars-sendung li span {
+line-height: 1.5;
+} 
+.Cars-sendung li .Klein-text {
+font-size: 12px;
+color: green;
+} 
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End content xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx statr fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx statr fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx statr fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx statr fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+.fixed {
+position: fixed;
+bottom: 2%;
+right: 2%;
+}
+
+
+.fixed .i{
+width: 100px;
+height: 60px;
+padding: 20px;
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 100px;
+color: white;
+font-size: 16px;
+outline: 2px gray solid;
+outline-offset: 2px;
+}
+.fixed:hover .fixed-count{
+visibility: visible;
+} 
+.fixed:hover .i{
+visibility: hidden;
+}
+.fixed:hover .fixed-option{
+visibility: visible;
+
+}
+.fixed .i i{
+padding: 12px;
+
+}
+.fixed .i i:first-child{
+border-right: 1px solid white;
+
+}
+
+.fixed-count {
+    transition: 0.3s;
+visibility: hidden;
+position: fixed;
+top: 0%;
+right: 0%;
+width: 100vw;
+height: 100vh;
+background-color: #000000be;
+}
+
+
+.PFixed { 
+position: absolute;
+
+}
+.PFixed  p{ 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 55px; 
+height: 55px;
+color: white;
+background-color: red;
+border-radius: 100px;
+transition: 0.6s;
+}
+.PFixed  p span{ 
+position: absolute;
+text-align: right;
+margin-right: 230px;
+width:140px;
+font-size: 16px ;
+font-weight: 900;
+
+}
+.PFixed  p:nth-child(1){ 
+transform: translateY(-100px);
+visibility: hidden;
+opacity: 0;
+z-index: -1;
+}
+.PFixed  p:nth-child(2){ 
+transform: translateY(-100px);
+visibility: hidden;
+opacity: 0;
+z-index: -1;
+}
+.PFixed  p:nth-child(3){ 
+transform: translateY(-100px);
+visibility: hidden;
+opacity: 0;
+}
+ .fixed:hover .PFixed  p:nth-child(1){
+visibility: visible;
+opacity: 5;
+transform: translateY(-220px);
+ }
+.fixed:hover .PFixed  p:nth-child(2){
+visibility: visible;
+opacity: 5;
+transform: translateY(-190px);
+ }
+.fixed:hover .PFixed  p:nth-child(3){
+visibility: visible;
+opacity: 5;
+transform: translateY(-170px);
+ }
+
+.fixed-option { 
+visibility: hidden;}
+
+#fixed-option { 
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+width: 40px; 
+height: 40px;
+background-color: red;
+border-radius: 100px;
+outline: 2px gray solid;
+outline-offset: 2px;
+top: 0%;
+right: 0%;
+}
+
+#fixed-option i{
+font-size: 25px;
+color: white;
+ }
+
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+/* <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxx End fixed xxxxxxxxxxxxxxxxxxxxxxxxxxxx--> */
+
+
+
+
+
+ /* { } */
+
+
+
+
+
+
+
+
+
+
+/* 
+ #01 - Discover The Design 
+ #02 - Prepare The Project And Files
+ #03 - Header Section Part 1
+ #04 - Header Section Part 2
+ #05 - Landing Section Part 1
+ #06 - Landing Section Part 2
+ #07 - Mega Menu Part 1
+ #08 - Mega Menu Part 2
+ #09 - Create The Main Title
+ #10 - Articles Section Part 1
+ #11 - Articles Section Part 2
+ #12 - Gallery Section
+ #13 - Features Section Part 1
+ #16 - Testimonials Section
+ #17 - Team Members Section Part 1
+ #18 - Team Members Section Part 2
+ #19 - Services Section
+ #20 - Our Skills Section
+ #21 - Work Steps Section
+ #22 - Events Section Part 1
+ #23 - Events Section Part 2
+ #24 - Pricing Plans Section Part 1
+ #26 - Video Section
+ #27 - Statistics Section
+ #28 - Discount Section Part 1
+ #29 - Discount Section Part 2
+ #30 - Footer Section Part 1
+ #31 - Footer Section Part 2
+  #32 - Separators And Shapes
+ 
+  */
+ 
+ 
+ 
+
+ 
+ 
+ /*  { } */
+ 
+ 
+ /* 
+ #01 - Introduction And What I Need To Learn                  autocad kurs 11:22
+ 
+ What is CSS
+ 
+ CSS stands for Cascading Style Sheets
+ CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+ CSS saves a lot of work. It can control the layout of multiple web pages all at once
+ External stylesheets are stored in CSS files
+ 
+ ####################################################################################################################################
+ #02 - Your First Project And Syntax 
+ 
+ <head>داخل قسم  <link>  رمرجعا إلى ملف ورقة الأنماط الخارجي داخل عنصر HTML يجب أن تتضمن كل صفحة  
+ 
+ 
+ <!DOCTYPE html>
+ 
+ 
+ Tag            <==========>          Description 
+ 
+ selectors      <==========>          CSS selectors are used to "find" (or select) the HTML elements you want to style. 
+ 
+ ####################################################################################################################################
+ 
+ /*#003 - Element Styling
+ 
+ CSS محددات 
+ التي تريد تصميمها HTML للعثور علي او تحديد عناصر  CSS تستخدم محددات
+ 
+ الى خمس فئاتCSS  يمكننا تقسيم محددات 
+       :
+ (حدد العناصر بناء على الاسم والمعرف والفئة)محددات بسيطة
+ (حدد العناصر بناء على علاقة محددة بينها)محددات التجميع
+ (حدد العناصر بناء على حالة معينة)محددات الفئة الزائفة
+ (حدد جزءا من عنصر ونمطه)محددات العناصر الزائفة
+ (حدد العناصر استنادا إلى سمة أو قيمة سمة)محددات السمات
+ 
+          
+ هناك ثلاث طرق لإدراج ورقة أنماط:
+ 
+ CSS الخارجية
+ CSS الداخلية
+ CSS مضمن 
+ 
+ ####################################################################################################################################
+ 
+ # 004 - Name Conventions And Rules
+ #013 - Grouping Multiple Selectors
+ 
+ محاولة كتابة اكواد واضحه وبسييطه لتسهيل البحث عنها والتعديل عليها
+ 
+ : لا يمكن أن يبدأ اسم المحدد برقم!
+ 
+ سيكون من الأفضل تجميع المحددات ، لتقليل الرمز
+ 
+ , لتجميع المحددات، افصل كل محدد بفاصلة  
+ 
+     البسيطه CSS جميع محددادت
+ 
+ Selector	             Example	        description
+ 
+ #id	                     #firstname         Selects the element with id="firstname"
+ .class	                 intro              Selects all elements with class="intro"
+ element.class	         p.intro            Selects only <p> elements with class="intro"
+ *	                     *	                Selects all elements
+ element	                 p	                Selects all <p> elements
+ element,element,..	     div, p             Selects all <div> elements and all <p> elements 
+ element>element	         div > p	        Selects all <p> elements where the parent is a <div> element
+ .class1.class2	        .name1.name2	    Selects all elements with both name1 and name2 set within its class attribute
+ element+element	        div + p	            Selects the first <p> element that is placed immediately after <div> elements
+ 
+ https://css-tricks.com/almanac/selectors/c/child/  موقع لتعمق في المحددات:
+ 
+ ####################################################################################################################################
+ 
+ /* #005 - Background - Color, Image, Repeat
+ 
+ 
+ Tag                                     Description
+ 
+ Background - color          <==========>      تحدد الخاصية لون خلفية عنصر
+ In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+ Background - Repeat         <==========>      يحدد كيفية تكرار صورة الخلفية نفسها عبر خلفية العنصر، بدءا من موضع الخلفية
+ background-repeat: repeat;      ====     ستكرر صورة الخلفية نفسها أفقيا ورأسيا
+ background-repeat: repeat-x;    ====     ستكرر صورة الخلفية نفسها أفقيا فقط
+ background-repeat: repeat-y;    ====     ستكرر صورة الخلفية نفسها عموديا فقط
+ background-repeat: no-repeat;   ====     ستظهر صورة الخلفية مرة واحدة فقط 
+ 
+ ####################################################################################################################################
+ 
+ /* #006 - Background - Attachment, Position, Size
+ 
+ background-position          <==========>     يتم استخدام الخاصية لتحديد موضع صورة الخلفية
+ center,top,bottom,left,righ      ====         يمكنك استخدام مجموعة من الكلمات الرئيسية للموضع
+ background-size              <==========>     يتم استخدام الخاصية لتحديد حجم صور الخلفية.
+ background-size: auto;           ====         القيمة الافتراضية. يتم عرض صورة الخلفية بحجمها الأصلي
+ background-size: contain;        ====         قم بتغيير حجم صورة الخلفية للتأكد من أن الصورة مرئية بالكامل
+ background-size: cover;          ====         قم بتغيير حجم صورة الخلفية لتغطية الحاوية بأكملها ، حتى إذا كان عليها تمديد الصورة أو قصها قليلاً من أحد الحواف
+ background-size: 50%;            ====         يضبط عرض صورة الخلفية وارتفاعها بالنسبة المئوية للعنصر الأصل. تحدد القيمة الأولى العرض ، بينما تحدد القيمة الثانية الارتفاع. إذا تم تقديم قيمة واحدة فقط ، يتم تعيين الثانية على "تلقائي"
+ background-size: 60px;           ====         عرض وارتفاع صورة الخلفية. تحدد القيمة الأولى العرض ، بينما تحدد القيمة الثانية الارتفاع. إذا تم تقديم قيمة واحدة فقط ، يتم تعيين الثانية على "تلقائي"
+ background-attachment        <==========>     تحدد الخاصية ما إذا كانت صورة الخلفية تمرر مع بقية الصفحة، أو تم إصلاحها.
+ scroll                           ====         سيتم تمرير صورة الخلفية مع الصفحة. هذا هو الافتراضي
+ fixed                            ====         لن يتم تمرير صورة الخلفية مع الصفحة
+ 
+ ###################################################################################################################################
+ 
+ /* #007 - Padding
+ 
+ padding            <==========>   تستخدم لإنشاء مساحة حول محتوى العنصر، داخل أي حدود محددة
+ يمكن أن تحتوي كافة خصائص الحشو على القيم التالية                        ====
+ padding-top             ====   لتقصير التعليمة البرمجية ، من الممكن تحديد جميع خصائص الحشو في خاصية واحدة
+ padding-bottom          ====    padding: 25px 50px 75px 100px;
+ padding-right           ====   لديك التحكم الكامل في الحشو. هناك خصائص لتعيين الحشو لكل جانب من جوانب العنصر أعلى ويمين وأسفل ويسار
+ padding-left            ====
+ 
+ 
+ ####################################################################################################################################
+ 
+ /* #008 - Margin      <==========>   تستخدم لإنشاء مساحة حول العناصر، خارج أي حدود محددة و تستخدم الهوامش لإنشاء مساحة حول العناصر
+                                   يمكن أن تحتوي جميع خصائص الهامش على القيم التالية:
+ margin-top            ====        لتقصير التعليمة البرمجية ، من الممكن تحديد جميع خصائص الهوامش في خاصية واحدة
+ margin-right          ====         margin:     25px                50px              75px               100px;  
+ margin-bottom         ====                    الايسر               السفلي           الايمن              العلوي
+ margin-left           ====        -10px     يمكن استخدام قيم سالبه  
+ auto                  ====         يمكنك تعيين خاصية الهامش إلى توسيط العنصر أفقيا داخل حاويته 
+ 
+ ####################################################################################################################################
+ 
+ /* #039 - Border Radius 
+ #009 - Border  
+ border-radius  <==========>   تحدد الخاصية نصف قطر زوايا العنصر .
+ border-style   <==========>   تسمح لك بتحديد نمط وعرض ولون حد العنصر.
+ border-width   ====  تحدد الخاصية عرض الحدود الأربعة
+ border-color   ====  يتم استخدام الخاصية لتعيين لون الحدود الأربعة
+ border         ====  لتقصير الرمز، من الممكن أيضا تحديد جميع خصائص الحدود الفردية في خاصية واحدة.
+                      border: 5px solid red;
+ 
+ 
+ border-style                 تحدد الخاصية نوع الحدود المراد عرضها.  
+ 
+ dotted -      ====           يحدد الحدود المنقطة                    
+ dashed -      ====           يحدد الحدود المتقطعة
+ solid -       ====           يحدد حدودا صلبة
+ double -      ====           يحدد الحدود المزدوجة
+ groove -      ====           يحدد حدود مخددة 3D. يعتمد التأثير على قيمة لون الحدود
+ ridge -       ====           يحدد حدود 3D ريدج. يعتمد التأثير على قيمة لون الحدود
+ inset -       ====           يحدد حدود داخلية 3D. يعتمد التأثير على قيمة لون الحدود
+ outset -      ====           يحدد حدود بداية 3D. يعتمد التأثير على قيمة لون الحدود
+ none -        ====           لا يحدد الحدود
+ hidden -      ====           يحدد الحدود المخفية 
+ 
+ ####################################################################################################################################
+ 
+ /* #010 - Outline
+ 
+ Outline          <==========>    هو خط يتم رسمه حول العناصر ، خارج الحدود ، لجعل العنصر "بارزا".
+ outline-width    <==========>    تحدد الخاصية عرض المخطط التفصيلي، ويمكن أن تحتوي على إحدى القيم التالية: 
+ outline-color    <==========>    يتم استخدام الخاصية لتعيين لون المخطط التفصيلي 
+ outline-offset   <==========>    تضيف الخاصية مسافة بين مخطط تفصيلي وحافة/حد عنصر. المسافة بين العنصر ومخططه شفافة
+ outline          <==========>    الخاصية هي خاصية اختصار لتعيين خصائص المخطط التفصيلي في سطر واحد
+ 
+ 
+ 
+ outline-style    <==========>    تحدد الخاصية نمط المخطط التفصيلي، ويمكن أن تحتوي على إحدى القيم التالية
+ dotted - يحدد مخططا منقطة
+ dashed - يحدد مخططا متقطعا
+ solid - يحدد مخططا صلبا
+ double - يحدد مخططا مزدوجا
+ groove - يحدد مخطط 3D مخدد
+ ridge - يحدد مخطط 3D ريدد
+ inset - يحدد مخطط 3D inset
+ outset - يحدد مخطط بداية 3D
+ none - لا يحدد أي مخطط
+ hidden - يحدد مخططا مخفيا 
+ 
+ ####################################################################################################################################
+ 
+ /* #011 - Display - Block, Inline Block, Inline
+ #012 - Element Visibility And Use Cases 
+ 
+ display               <==========>   تحدد الخاصية إذا/كيف يتم عرض عنصر , الخاصية هي أهم خاصية  للتحكم في التخطيط
+ display: none;        <==========>   يستخدم عادة مع جافا سكريبت لإخفاء العناصر وإظهارها دون حذفها وإعادة إنشائها
+ block & inline        <==========>   يحتوي كل عنصر اتش تي ام ال على قيمة عرض افتراضية اعتمادا على نوع العنصر الذي هو عليه. قيمة العرض الافتراضية لمعظم العناصر هي 
+ inline-block          <==========>   لتقسيم العناصر بجانب بعض 
+ visibility:hidden     <==========>   يستخزم لي اخفاء العناصر 
+ 
+ ####################################################################################################################################
+ 
+ /* #13 - Grouping Multiple Selectors
+ 
+ يمكن تجميع القيم المحداده واعطاه نفس التغيرات
+ .one,
+ .two,
+ .three { color: rgb(92, 123, 26);
+     border-color: blueviolet; *
+ 
+ ####################################################################################################################################
+ 
+ 
+ /* #014 - Nesting
+ 
+ بدلا من إعادة كتابة نفس مجموعة الخصائص للمحددات المختلفة ، يمكننا ببساطة تداخل
+ المحددات داخل المحددات الأخرى. لهذا السبب ، نحن لا نقلل
+ فقط من حجم الكود ولكن أيضا نقلل من وقت التحميل الإجمالي.
+  
+ يمكننا التعديل علي العناصر التي ذاخل عنصر ، بي كتابة العنصر الاول الذي بيه العناصر المراد التعديل عليه
+ 
+ مثال
+ div,span.A5 
+     color: rgb(12, 133, 173); 
+ 
+ ####################################################################################################################################    
+ 
+ /* #15 - Dimensions - Width And Height
+ 
+ 
+ لا تتضمن خصائص الارتفاع والعرض الحشو أو الحدود أو الهوامش. يقوم بتعيين ارتفاع / عرض المنطقة داخل الحشو والحدود والهامش للعنصر.
+ 
+ height-width  <==========>  يتم استخدام الخصائص لتعيين ارتفاع وعرض عنصر
+ max-width     <==========>  يتم استخدام الخاصية  لتعيين الحد الأقصى لعرض عنصر
+ max-height    <==========>  تحدد الخاصية الحد الأقصى لارتفاع عنصر
+ auto          <==========>  هذا هو الافتراضي. يقوم المتصفح بحساب الارتفاع والعرض
+ initial       <==========>  يضبط الارتفاع / العرض على قيمته الافتراضية  
+ inherit       <==========>  سيتم توريث الارتفاع / العرض من قيمته الأصلية 
+ 
+ ####################################################################################################################################
+ 
+ /* #021 - Text - Overflow And Use Cases
+ #016 - Overflow - Overflow-X And Overflow-Y
+ ملاحظه: تعمل الخاصية فقط مع عناصر الكتلة ذات الارتفاع المحدد
+ Overflow       <==========>    تحدد الخاصية ما إذا كان يجب قص المحتوى أو إضافة أشرطة تمرير عندما يكون محتوى عنصر كبيرا جدا بحيث لا يمكن احتواؤه في المنطقة المحددة
+ visible        <==========>    الافتراضي. لا يتم قص الفائض. يتم عرض المحتوى خارج مربع العنصر
+ hidden         <==========>    يتم قص الفائض ، وسيكون بقية المحتوى غير مرئي
+ scroll         <==========>    يتم قص الفائض ، ويضاف شريط تمرير لرؤية بقية المحتوى
+ auto           <==========>    على غرار ، لكنه يضيف أشرطة التمرير فقط عند الضرورة
+ overflow-x     <==========>    يحدد ما يجب القيام به مع الحواف اليسرى / اليمنى للمحتوى 
+ overflow-y     <==========>    يحدد ما يجب القيام به مع الحواف العلوية / السفلية للمحتوى
+ text-overflow  <==========>    (...) . تحدد الخاصية كيفية الإشارة إلى المحتوى الفائض الذي لا يتم عرضه للمستخدم. يمكن قصه أو عرض علامة حذف
+                    ====
+           clip     ====    القيمة الافتراضية. يتم قص النص ولا يمكن الوصول إليه  
+       ellipsis     ====    ("...")   عرض علامة القطع  لتمثيل النص المقطوع
+         string     ====    يجعل السلسلة المحددة لتمثيل النص المقطوع
+         nowrap     ====    لا يقطع النص ويخرج.كما هو 
+ 
+ ####################################################################################################################################
+ 
+ #017 - Text - Color And Shadow
+ #020 - Text - Spacing 
+ color            <==========>   يتم استخدام الخاصية لتعيين لون النص. يتم تحديد اللون من خلال
+ text-indent      <==========>   يتم استخدام الخاصية لتحديد المسافة البادئة للسطر الأول من النص
+ letter-spacing   <==========>   يتم استخدام الخاصية لتحديد المسافة بين الأحرف في النص.
+ line-height      <==========>   يتم استخدام الخاصية لتحديد المسافة بين الأسطر
+ word-spacing     <==========>   يتم استخدام الخاصية لتحديد المسافة بين الكلمات في النص
+ white-space      <==========>   تحدد الخاصية كيفية معالجة المسافة البيضاء داخل عنصر
+ text-shadow      <==========>   تضيف الخاصية ظلا إلى النص.  اضافة اربعه قيم ' الطل الافقي والراسي واللون والضباب
+ word-break       <==========>   تحدد الخاصية كيفية كسر الكلمات عند الوصول إلى نهاية السطر. 
+ 
+ 
+ ####################################################################################################################################
+ 
+ /* #018 - Text - Alignment
+ 
+ text-align              <==========>    يمكن محاذاة النص إلى اليسار أو اليمين أو توسيطه أو ضبطه, يتم استخدام الخاصية لتعيين المحاذاة الأفقية للنص
+ text-align-last         <==========>    تحدد الخاصية كيفية محاذاة السطر الأخير من النص
+ direction               <==========>    يمكن استخدام الخصائص والخصائص لتغيير اتجاه النص لأحد العناصر 
+ unicode-bidi            <==========>    يمكن استخدام الخصائص والخصائص لتغيير اتجاه النص لأحد العناصر
+ vertical-align          <==========>    تقوم الخاصية بتعيين المحاذاة الرأسية لعنصر
+  */
+ 
+ 
+ /* #19 - Text - Decoration And Transform
+ 
+ text-decoration-line            <==========>     يتم استخدام الخاصية لإضافة سطر زخرفة إلى النص
+ text-decoration-color           <==========>     يتم استخدام الخاصية لتعيين لون خط الديكور.
+ text-decoration-style           <==========>     يتم استخدام مكان الإقامة لتعيين نمط خط الديكور.
+ text-decoration-thickness       <==========>     يتم استخدام الخاصية لضبط سمك خط الديكور
+ text-decoration                 <==========>     خاصية اختصار لتعيين خصائص المخطط التفصيلي في سطر واحد
+ text-transform                  <==========>     يتم استخدام الخاصية لتحديد الأحرف الكبيرة والصغيرة في النص. */
+ 
+ 
+ /* #022 - Inheritance
+ 
+ inherit     <==========>  تحدد الكلمة الرئيسية أن الخاصية يجب أن ترث قيمتها من العنصر الأصل  
+ 
+ 
+ inherit     <==========>  يمكن استخدام الكلمة الرئيسية لأي خاصية CSS وعلى أي عنصر HTML. */
+ 
+ 
+ /* #023 - Typography - Font Family
+ #024 - Typography - Font Size And CSS Units 
+ #025 - Typography - Font Style And Variant And Weight
+ "Times New Roman"  ملاحظة: إذا كان اسم الخط يحتوي على أكثر من كلمة واحدة، فيجب أن يكون بين علامتي اقتباس، مثل: 
+ 
+ font-family      <==========>  ستخدم الخاصية لتحديد خط النص
+ Web safe fonts   <==========>  هي خطوط مثبتة عالميا عبر جميع المتصفحات والأجهزة
+ 
+ HTML و CSS  القائمة التالية هي أفضل خطوط الويب الآمنة ل 
+ 
+ Arial (sans-serif)          <==========>  هو الخط الأكثر استخداما على نطاق واسع لكل من الوسائط عبر الإنترنت والمطبوعة
+ Verdana (sans-serif)        <==========>  هو خط شائع جدا. يمكن قراءة  بسهولة حتى بالنسبة لأحجام الخطوط الصغيرة.
+ Tahoma (sans-serif)         <==========>  يحتوي على مسافة أقل بين الأحرف.
+ Trebuchet MS (sans-serif)   <==========>  استخدم هذا الخط بعناية. غير مدعوم من قبل جميع أنظمة تشغيل الأجهزة المحمولة.
+ Times New Roman (serif)     <==========>  هي واحدة من أكثر الخطوط التي يمكن التعرف عليها في العالم. يبدو محترفا ويستخدم في العديد من الصحف والمواقع "الإخبارية". وهو أيضا الخط الأساسي لأجهزة وتطبيقات
+ Georgia (serif)             <==========>  جورجيا هو خط  أنيق. إنه قابل للقراءة للغاية بأحجام خطوط مختلفة ، لذلك فهو مرشح جيد للتصميم المتجاوب مع الجوال.
+ Garamond (serif)            <==========>  هو خط كلاسيكي يستخدم للعديد من الكتب المطبوعة. لديها نظرة خالدة وقراءة جيدة.
+ Courier New (monospace)     <==========>  ساعي جديد هو الخط الأكثر استخداما على نطاق واسع أحادي الفضاء serif. غالبا ما يستخدم Courier New مع شاشات الترميز ، ويستخدمه العديد من موفري البريد الإلكتروني كخط افتراضي. Courier New هو أيضا الخط القياسي لسيناريوهات الأفلام.
+ Brush Script MT (cursive)   <==========>  تم تصميم خط Brush Script MT لتقليد الكتابة اليدوية. إنه أنيق ومتطور ، ولكن قد يكون من الصعب قراءته. استخدمه بعناية.
+ 
+ : عند تحديد خط في CSS، قم دائما بإدراج خط احتياطي واحد على الأقل (لتجنب السلوكيات غير المتوقع)ملاحظه
+ ملاحظه: قد يؤدي طلب خطوط متعددة إلى إبطاء صفحات الويب الخاصة بك! لذا كن حذرا بشأن ذلك.
+ الحجم االافتراضي لنص صفحات الويب 16 بيكسل 
+ 
+ Google Font   <==========>   يوجد اكثر من 1000 نوع خط من جوجل يمكن استعمالها ماعليك سوي اضافة ورقة انماط في الراس  
+ serif         <==========>   خط احتياطي اغتراضي يجب ادارجه في اي اذخال للخطوط
+ sans-serif    <==========>   خط احتياطي اغتراضي يجب ادارجه في اي اذخال للخطوط                             
+ font-size     <==========>   تقوم الخاصية بتعيين حجم النص        
+ CSS Units     <==========>   يحتوي سي سس على عدة وحدات مختلفة للتعبير عن الطول 
+ Unit          <==========>   Description	
+ em	1 , 2     <==========>   بالنسبة لحجم الخط للعنصر يعني ضعف حجم الخط الحالي	
+ rem	          <==========>   متعلق بحجم الخط للعنصر الجذر،اذا من ال html or css 
+ vw	          <==========>   متناسب مع 1٪ من عرض منفذ العرض *	
+ vh	          <==========>   متناسب مع 1٪ من ارتفاع منفذ العرض *
+ %             <==========>   متعلق بالعنصر الأصل                  
+ font-style    <==========>   تستخدم الخاصية في الغالب لتحديد نص مائل      
+          normal  =====   يظهر النص بشكل طبيعي
+          italic  =====   يظهر النص بخط مائل
+         oblique  =====   مائل يشبه إلى حد كبير الخط المائل ، ولكنه أقل دعما
+ font-weight   <==========>   تحدد الخاصية وزن الخط 
+                 normal 
+                 lighter
+                 bold
+                 900     
+ font-variant  <==========>   تحدد الخاصية ما إذا كان يجب عرض نص بخط صغير الحجم أم لا         
+                */
+ 
+ 
+ /* #026 - Mouse Cursor 
+ 
+ تحديد شكل و وظيفة مؤشر الماوس حسب الموقع اذا كان تحريك او ضغط او بحث او انتظار */
+ 
+ 
+ /* #027- Float And Clear
+ 
+ Float     <==========>  تحدد الخاصية  كيفية تعويم عنصر
+     left      ====    يطفو العنصر على يسار حاويته
+     right     ====    يطفو العنصر على يمين حاويته
+     none      ====    لا يطفو العنصر (سيتم عرضه فقط في مكان حدوثه في النص). هذا هو الافتراضي
+     inherit   ====    يرث العنصر قيمة التعويم لأصله
+ float     <==========>  في أبسط استخدام لها ، يمكن استخدام الخاصية لالتفاف النص حول الصور
+ 
+ Clear     <==========>  تحدد الخاصية العناصر التي يمكن أن تطفو بجانب العنصر الذي تم مسحه وعلى أي جانب
+  */
+ 
+ 
+ /* #028 - Mastering The CSS Calculation 
+ 
+ calc()  <==========>  تسمح دالات الرياضيات  باستخدام التعبيرات الرياضية كقيم خصائص.
+ 
+ width: calc((100% - 96px) / 6); */
+ 
+ 
+ /* 
+ #029 - Opacity 
+ 
+ transparent    <==========>  لون شفاف من قائمة الالوان
+ 
+ Opacity        <==========>  تحدد الخاصية عتامة/شفافية عنصر
+ 
+ opacity:hover  <==========>  غالبا ما يتم استخدام الخاصية مع المحدد لتغيير التعتيم على الماوس */
+ 
+ 
+ /* #030 - Position
+ 
+ Position       <==========>     تحدد الخاصية نوع طريقة تحديد المواقع المستخدمة لعنصر ما ثابت أو نسبي أو ثابت أو مطلق أو لزج
+ static         <==========>     الوضع الافتراضي يتم تثبيت العنصر به 
+ relative       <==========>     يمكن تحريك العنصر تحريك نسبي حر في اي مكان في الصفحه
+ fixed          <==========>     يضع العنصر ثابت في اي مكان في الصفحه ويتحرك مع تمرير الماوس
+ absolute       <==========>     في العنصر الاول بعد ضم العنصر التاني في نفس محدد العنصر الاول relative لتحريك العنصر الاول ذاخل حدود العنصر التاني فقط يجب كتابة خاصية 
+ sticky         <==========>     يثبت العنصر في مكانه حتي تصل اليه بتحريك المارس فيتحرك
+ top               <==>
+ bottom            <==>      absolute              لن يبقى العنصر في التدفق الطبيعي للصفحة. ستضع نفسها وفقًا لأقرب سلف .
+ left              <==>
+ right             <==> */
+ 
+ 
+ /* #031 - Z-Index
+ 
+ Z-Index   <==========>   تحدد الخاصية ترتيب تراكم العناصر
+ 
+ التحكم في الطبقات  */
+ 
+ 
+ /* #032 - Lists Styling
+ 
+ list-style-type      <==========>     تحدد الخاصية نوع علامة عنصر القائمة.حروف او ارقام او نقاط
+                  none   <====>    يمكن أيضا استخدام الخاصية لإزالة العلامات/التعداد النقطي.
+                   list-style-type: none;
+                   padding: 0px;
+                   margin: 0px;
+ list-style-image     <==========>     تحدد الخاصية صورة كعلامة عنصر قائمة   
+ list-style-position  <==========>     تحدد الخاصية موضع علامات عناصر القائمة (النقاط النقطية) */
+ 
+ 
+ /* #033 - Table Styling
+ 
+ border              <==========>   لتحديد حدود الجدول استخدم الخاصية
+ border-spacing      <==========>   تقوم الخاصية بتعيين المسافة بين حدود الخلايا المجاورة
+ border-bottom       <==========>   للفواصل الأفقية
+ padding             <==========>   للتحكم في المسافة بين الحد والمحتوى في جدول،
+ border-collapse     <==========>   تحدد الخاصية ما إذا كان يجب طي حدود الجدول إلى حد واحد
+ width: 100%         <==========>   التحكم في عرض الجدول
+ height              <==========>   التحكم في طول الجدول              
+ text-align: center  <==========>   تقوم الخاصية بتعيين المحاذاة الأفقية  مثل اليسار أو اليمين أو الوسط       
+ vertical-align      <==========>   تقوم الخاصية بتعيين المحاذاة الرأسية مثل أعلى أو أسفل أو وسط
+ hover:              <==========>   استخدم المحدد لتمييز صفوف الجدول على الماوس فوق
+ nth-child()         <==========>   بالنسبة للجداول المخططة بالحمار الوحشي، استخدم المحدد وأضف علامة إلى جميع صفوف الجداول الزوجية  */
+ 
+ 
+ /* #034 - Pseudo Classes 
+ 
+ :link      <==========>   استخدام المحدد لتحديد الروابط التي لم تتم زيارتها
+ :visited   <==========>   المحدد يستخدم لتحديد الروابط التي تمت زيارتها
+ :hover     <==========>   يستخدم المحدِّد لتحديد العناصر عند تحريك الماوس فوقها
+ :active    <==========>   يتم استخدام المحدد لتحديد الارتباط النشط وتصميمه.
+ :empty     <==========>   المحدد يطابق كل عنصر ليس له عناصر فرعية العناصر الفارغه
+ :checked   <==========>   input المحدد يطابق كل عنصر محدد فقط لأزرار الاختيار وخانات الاختيار و خيار */
+ 
+ 
+ /* #035 - Pseudo Elements - First Letter, First Line, Selection
+ #036 - Pseudo Elements - Before, After, Content
+ ::first-letter    <==========>     يُستخدم العنصر الزائف لإضافة نمط خاص إلى الحرف الأول من النص.
+ ::first-line      <==========>     يُستخدم العنصر الزائف لإضافة نمط خاص إلى السطر الأول من النص. 
+ ::marker          <==========>     يحدد العنصر الزائف علامات عناصر القائمة.
+ ::selection       <==========>     يتطابق العنصر الزائف مع جزء العنصر المحدد بواسطة المستخدم.
+ 
+ content           <==========>     تُستخدم الخاصية مع العناصر الزائفة، لإدراج المحتوى المُنشأ :: before و :: after
+ ::before          <==========>     يمكن استخدام العنصر الزائف لإدراج بعض المحتوى قبل محتوى العنصر.
+ ::after           <==========>     يمكن استخدام العنصر الزائف لإدراج بعض المحتوى بعد محتوى العنصر. */
+ 
+ 
+ /* / #037 - Pseudo Elements - Content And Trainings
+ 
+ counter-reset-             <==========>   ينشئ أو يعيد تعيين عداد
+ counter-increment-         <==========>   يزيد من قيمة العداد
+ content-                   <==========>   إدراج المحتوى الذي تم إنشاؤه
+ counters() or counter()    <==========>   وظيفة - تضيف قيمة عداد إلى عنصر       */
+ 
+ 
+ /* #038 - Vendor Prefixes 
+ 
+ webseit ..can i use... we can there test if the some code support in browesr or not */
+ 
+ 
+ /* #040 - Box Shadow And Examples 
+ 
+ box-shadow  <==========>   تُستخدم خاصية لتطبيق ظل واحد أو أكثر على عنصر
+ color       <==========>   تحدد المعلمة لون الظل
+ blur        <==========>   تحدد المعلمة نصف قطر التمويه. كلما زاد الرقم ، زاد ضبابية الظل
+ spread      <==========>   تحدد المعلمة نصف قطر الانتشار. تزيد القيمة الموجبة من حجم الظل ، بينما تقلل القيمة السالبة من حجم الظل.
+ inset       <==========>   تقوم المعلمة بتغيير الظل من الظل الخارجي الي الذاخلي */
+ 
+ 
+ /* #041 - The Box Model And Box Sizing
+ 
+ box-sizing    <==========>   تتيح لنا خاصية تضمين المساحة المتروكة والحد في العرض والارتفاع الكليين للعنصر.
+ border-box;   <==========>   إذا قمت بالتعيين على عنصر ، فسيتم تضمين المساحة المتروكة والحد في العرض والارتفاع: */
+ 
+ 
+ /* #042 - Transition
+ 
+ transition                     <==========>     خاصية مختصرة لتعيين خصائص الانتقال الأربعة في خاصية واحدة
+    اختصار جميع وظائف الخاصيه     ====  transition: all,0.2s 0.1s linear;
+ transition-delay               <==========>     يحدد التأخير بالثواني لتأثير الانتقال
+ transition-duration            <==========>     يحدد عدد الثواني أو المللي ثانية التي يتطلبها تأثير الانتقال لإكمالها
+ transition-property            <==========>     يحدد اسم خاصية التي يكون لها تأثير الانتقال الطول او العرض
+ transition-timing-function     <==========>     
+          ease-                     ====       يحدد تأثير انتقال ببداية بطيئة ، ثم سريعة ، ثم تنتهي ببطء (هذا افتراضي)
+          linear-                   ====       يحدد تأثير الانتقال بنفس السرعة من البداية إلى النهاية
+          ease-in-                  ====       يحدد تأثير انتقال مع بداية بطيئة
+          ease-out-                 ====       يحدد تأثير الانتقال بنهاية بطيئة
+          ease-in-out-              ====        يحدد تأثير الانتقال مع بداية ونهاية بطيئين
+          cubic-bezier(n,n,n,n)-    ====        يتيح لك تحديد القيم الخاصة بك في دالة مكعب بيزير                                  
+                                    
+                                    */
+ 
+ 
+ /* !Important Declaration And Use Cases
+ 
+ !important   <==========>  تُستخدم القاعدة لإضافة أهمية أكبر لخاصية / قيمة من المعتاد
+ !important   <==========>  في الواقع ، إذا استخدمت القاعدة ، فستتجاوز جميع قواعد التصميم السابقة لتلك الخاصية المحددة على هذا العنصر */
+ 
+ 
+ /* #044 - The Margin Collapse 
+ 
+  يتم أحيانًا طي الهوامش العلوية والسفلية للعناصر في هامش واحد يساوي أكبر الهامشين.
+ 
+ هذا لا يحدث على الهامش الأيمن والأيسر! فقط الهوامش العلوية والسفلية! */
+ 
+ 
+ /* - #045 - CSS Variables And Trainings 
+ 
+ var()          <==========>     تُستخدم الوظيفة لإدخال قيمة متغير   
+ :root          <==========>     محدد جذر العنصر او اللون الرئسي المراد استخدامه في المتغير
+   --namecoler      ====           بداية كتابة الجدر بي 
+   :root { --deenColer : rgb(0, 247, 255) ;}
+ Fallbacks      <==========>      اضافة لون احتياطي في الكود لسبب حدوث اي مشكله في اللون الذي في الجدر */
+ 
+ 
+ /* #046-#053  Flex Box Parent - Direction, Wrap, Flow
+ #047 - Flex Box Parent - Justify Content
+ #048 - Flex Box Parent - Align Items
+ #049 - Flex Box Parent - Align Content
+ #050 - Flex Box Child - Grow, Shrink, Order
+ #051 - Flex Box Child - Flex Basis, Flex Shorthand
+ #052 - Flex Box Child - Align Self, Games, Task
+ #053 - Finish Flex Froggy Game
+ Flexbox          <==========>  تسهل وحدة تخطيط الصندوق المرن تصميم هيكل تخطيط سريع الاستجابة مرن دون استخدام تعويم أو تحديد الموضع
+ display:flex ;   <==========>   تصبح الحاوية المرنة مرنة عن طريق ضبط الخاصية على اولا
+ flex-direction   <==========>  تحدد الخاصية في أي اتجاه تريد الحاوية تكديس العناصر المرنة.
+               colum  ====  تكدس القيمة العناصر المرنة عموديًا من أعلى إلى أسفل
+      column-reverse  ====  تكدس القيمة العناصر المرنة عموديًا من اسفل الي الاعلي
+                 row  ====  تكدس القيمة العناصر المرنة أفقيًا من اليسار إلى اليمين
+         row-reverse  ====  تكدس القيمة العناصر المرنة أفقيًا من اليمين الي اليسار
+ 
+ flex-wrap        <==========>  تحدد الخاصية ما إذا كان يجب التفاف العناصر المرنة أم لا
+                wrap  ====  تحدد القيمة أن العناصر المرنة ستلتف إذا لزم الأمر:
+        wrap-reverse  ====  تحدد القيمة أن العناصر المرنة ستلتف إذا لزم الأمر ، بترتيب عكسي
+              nowrap  ====  تحدد القيمة أن العناصر المرنة لن تلتف هذا افتراضي 
+ 
+ flex-flow        <==========>  الخاصية هي خاصية مختصرة لتعيين كل من الخصائص السابقه في سطر واحد
+ 
+ justify-content  <==========>  تُستخدم الخاصية لمحاذاة العناصر المرنة
+              center  ====   تقوم القيمة بمحاذاة العناصر المرنة في وسط الحاوية
+          flex-start  ====   تقوم القيمة بمحاذاة العناصر المرنة في بداية الحاوية هذا افتراضي
+            flex-end  ====   تقوم القيمة بمحاذاة العناصر المرنة في نهاية الحاوية
+        space-around  ====   تعرض القيمة العناصر المرنة بمسافة قبل السطور ، وبينها ، وبعدها:
+       space-between  ====   تعرض القيمة العناصر المرنة مع وجود مسافة بين السطور:
+ 
+ align-items      <==========>   يتم استخدام الخاصية لمحاذاة العناصر المرنة.
+              center  ====   تقوم القيمة بمحاذاة العناصر المرنة في منتصف الحاوية:
+          flex-start  ====   تقوم القيمة بمحاذاة العناصر المرنة أعلى الحاوية:
+            flex-end  ====   تقوم القيمة بمحاذاة العناصر المرنة أسفل الحاوية:
+             stretch  ====   تمد القيمة العناصر المرنة لملء الحاوية هذا افتراضي
+            baseline  ====   تقوم القيمة بمحاذاة العناصر المرنة مثل محاذاة خطوطها الأساسية:
+ 
+ align-content    <==========>  يتم استخدام الخاصية لمحاذاة الخطوط المرنة.
+             center  ====   تقوم القيمة بمحاذاة العناصر المرنة في وسط الحاوية
+         flex-start  ====   تعرض القيمة الخطوط المرنة في بداية الحاوية:
+           flex-end  ====   تعرض القيمة الخطوط المرنة في نهاية الحاوية: 
+            stretch  ====   تمد القيمة الخطوط المرنة لتشغل المساحة المتبقية 
+      space-between  ====   تعرض القيمة الخطوط المرنة بمسافة متساوية بينها:
+       space-around  ====   تعرض القيمة الخطوط المرنة بمسافة قبلها وبعدها:
+ 
+ 
+ order        <==========>   تحدد الخاصية ترتيب العناصر المرنة.
+ flex-grow    <==========>   تحدد الخاصية مقدار زيادة العنصر المرن بالنسبة لبقية العناصر المرنة.
+ flex-shrink  <==========>   تحدد الخاصية مقدار تقلص العنصر المرن بالنسبة لبقية العناصر المرنة.
+ flex-basis   <==========>   تحدد الخاصية الطول الأولي للعنصر المرن.
+ align-self   <==========>   تحدد الخاصية محاذاة العنصر المحدد داخل الحاوية المرنة 
+ 
+ display : inline - flex   <==========> السطر الاول المراد وضع العنصر بجانبه
+ display : inline - block  <==========>  العنصر التاني المراد وضعه بجاتب السطر الاول
+ 
+ اجعل العنصر المرن الثالث غير قابل للنمو  ، وغير قابل للتقلص  ، وبطول أولي يبلغ 200 بكسل
+  style="flex: 0 0 200px" <==========> الخاصيه المختصره لي كل الكود 
+ 
+ توسيط مثالي
+ في المثال التالي سنحل مشكلة نمط شائعة جدًا: تمركز مثالي.
+ SOLUTION: Set both the justify-content and align-items properties to center, and the flex item will be perfectly centered:
+ 
+ line-height     <==========>     تحدد الخاصية ارتفاع الخط. */
+ 
+ 
+ /* #054 - Filters
+ 
+ Filters  <==========>  تحدد الخاصية التأثيرات علي الصور
+ 
+ 
+ انواع التأثيرات
+ 
+ filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() 
+ | hue-rotate() | invert() | opacity() | saturate() | sepia() | url(); */
+ 
+ 
+ /* #055 - Gradients
+ ثلاثة أنواع من التدرجات: 
+ (تنخفض / لأعلى / يسار / يمين / قطريً)التدرجات الخطية 
+ (محددة بمركزها)التدرجات الشعاعية 
+ (تدور حول نقطة مركزية)التدرجات المخروطية 
+ 
+                  linear-gradient <====> التدرجات الخطية 
+ 
+ Top to Bottom                 <==========>      الاتجاه - من أعلى إلى أسفل  الافتراضي                                      background-image: linear-gradient(red, yellow);
+ Left to Right                 <==========>      الاتجاه - من اليسار إلى اليمين                                            background-image: linear-gradient(to right, red , yellow);
+ Diagonal                      <==========>      الاتجاه - قطري                                                             background-image: linear-gradient(to bottom right, red, yellow);
+ Using Different Angles        <==========>      باستخدام الزوايا                                                          background-image: linear-gradient(180deg, red, yellow);
+ Repeating a linear-gradient   <==========>     تُستخدم وظيفة التدرج الخطي المتكرر () لتكرار التدرجات اللونية الخطية:   background-image: repeating-linear-gradient(red, yellow 10%, green 20%);                                    */
+ 
+ 
+ /* #056 - Pointer Events And Caret Color
+ 
+ caret-color         <==========>     textareas    تحدد الخاصية لون المؤشر في المدخلات أو أي عنصر قابل للتحرير.
+ pointer-events      <==========>                 تحدد الخاصية ما إذا كان العنصر سيتفاعل مع أحداث المؤشر أم لا. */
+ 
+ 
+ /*#057- #063 Grid - Parent - Template Columns 
+ #058 - Grid - Parent - Template Rows And Gap
+ #059 - Grid - Parent - Justify Content And Align Content
+ #060 - Grid - Parent - Complete Layout With Template Areas
+ #061 - Grid - Child  - Grid Column And Grid Row
+ #062 - Grid - Child - Grid Area And Trainings
+ #063 - Grid - Min, Max And Auto Fill
+ Grid                     <==========>   توفر  نظام تخطيط قائم على الشبكة ، مع صفوف وأعمدة ، مما يسهل تصميم صفحات الويب دون الحاجة إلى استخدام العوامات وتحديد المواقع.
+ display: grid;           <==========>   تعين الخاصيه عند استعمال الشبكه
+ display: inline-grid;    <==========>   تعين الخاصيه عند استعمال الشبكه
+ column                   <==========>   تسمى الخطوط الرأسية لعناصر الشبكة بالأعمدة 
+ column-gap               <==========>    الفراغات بين كل عمود / صف تسمى فجوات 
+ row                      <==========>    تسمى الخطوط الأفقية لعناصر الشبكة بالصفوف 
+ row-gap                  <==========>    الفراغات بين كل عمود / صف تسمى فجوات 
+ gap   (row) (coluns)     <==========>   الخاصية هي خاصية مختصرة للفجوات الافقيه والعموديه     <==========>                       gap: 50px 100px
+ grid-template-columns    <==========>   تحدد الخاصية عدد الأعمدة في تخطيط الشبكة ، ويمكنها تحديد عرض كل عمود.  <==========>     grid-template-columns: auto auto auto auto;
+ grid-template-columns    <==========>   إذا كنت تريد أن يحتوي تخطيط شبكتك على 4 أعمدة ، فحدد عرض الأعمدة الأربعة ، أو "تلقائي" إذا كان يجب أن يكون لجميع الأعمدة نفس العرض.
+ grid-template-columns    <==========>    يمكن أيضًا استخدام الخاصية لتحديد حجم عرض الأعمدة.                                       grid-template-columns: 80px 200px auto 40px;
+ grid-template-rows       <==========>    تحدد الخاصية ارتفاع كل صف .
+ justify-content          <==========>    تُستخدم الخاصية لمحاذاة الشبكة بالكامل داخل الحاوية.
+ align-content            <==========>    تُستخدم الخاصية لمحاذاة الشبكة بالكامل داخل الحاوية عموديًا 
+ repeat(4, auto)          <==========>    اضافة الاعمده بنفس القيه    <==========>                                                  grid-template-columns: repeat(4, auto) 1px 30px 30px;
+ Fraction                 <==========>    تاخد الاجزاء المتبقيه من المساحه                                                          grid-template-columns: repeat(4, auto) ifr 30px 30px;
+ grid-template-areas      <==========>    يمكن الإشارة إلى عناصر الشبكة المسماة بخاصية حاوية الشبكة.                              grid-template-areas: "logo logo  nav nav nav  "
+ grid-area                <==========>    يمكن أيضًا استخدام الخاصية لتعيين أسماء لعناصر الشبكة.                                  grid-area: logo;
+ grid-column              <==========>    تحدد الخاصية العمود  لوضع عنصر عليها .أنت تحدد مكان بدء العنصر وأين سينتهي العنصر.   grid-column: 1 / 5;
+ grid-column: 1 / span 3  <==========>    ينم تحديد عنصر وليس عمود مع خاصية ال  span
+ grid-row                 <==========>    تحدد الخاصية الصف الذي سيتم وضع عنصر فيه.أنت تحدد مكان بدء العنصر وأين سينتهي العنصر.
+ auto-Fill                <==========>    باستخدام الملء التلقائي ، يكون كل شيء مماثلاً للاحتواء التلقائي ، باستثناء عدم طي المسارات الفارغة. */
+ 
+ 
+ /* #065-#070 2D Transform - Scale
+ #066 - 2D Transform - Rotate
+ #067 - 2D Transform - Translate
+ #068 - 2D Transform - Skew
+ #069 - 2D Transform - Matrix
+ #070 - Transform - Origin
+ transform  <==========> باستخدام الخاصية يمكنك استخدام طرق التحويل ثنائية الأبعاد التالية          
+ scale ()   <==========> تزيد الطريقة أو تنقص حجم العنصر وفقًا للمعلمات المعطاة للعرض والارتفاع                                    transform: scale(2.10) ;
+      scaleX () ==== تزيد الطريقة أو  تقلل من عرض العنصر
+      scaleY () ==== الطريقة تزيد أو تنقص ارتفاع العنصر 
+ translate  <==========>    X والمحور Y تقوم الطريقة بنقل عنصر من موضعه الحالي وفقًا للمعلمات المعطاة للمحور                      transform: translate(50px, 100px);
+ rotate ()  <==========>    تقوم الطريقة بتدوير عنصر في اتجاه عقارب الساعة أو عكس اتجاه عقارب الساعة وفقًا لدرجة معينة.          transform: rotate(20deg);
+ Degrees / Deg  ====  وحدة قياس الدراجات
+ skew ()     <==========>    تقوم الطريقة بإمالة عنصر على طول المحور X و Y بالزوايا المعطاة.
+     skew Y ()  ====  تقوم الطريقة بإمالة عنصر على طول المحور بالزاوية المعطاة
+     skew X ()  ====  تقوم الطريقة بإمالة عنصر على طول المحور بالزاوية المعطاة.
+ matrix ()   <==========>  تجمع هذه الطريقة بين جميع طرق التحويل ثنائية الأبعاد في طريقة واحدة
+  المعلمات هي كما يلي 
+ matrix           (scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+                      -         -        -       -            -              -   
+ transform: matrix(   1,      -0.3,      0,      1,           0,             0);
+ 
+ transform-origin  <==========> تتيح لك الخاصية تغيير موضع النقطه التي يدور حولهاالعناصر    transform-origin: center left ; */
+ 
+ 
+ /* #071 - 3D Transform - Rotate           
+ #072 - 3D Transform - Translate, Perspective, Perspective Origin
+ #073 - 3D Transform - Backface Visibility And Flip Product
+ 
+ rotate X ()   <==========>   تقوم الطريقة بتدوير عنصر حول محوره عند درجة معينة
+ rotate Y ()   <==========>   تقوم الطريقة بتدوير عنصر حول المحور الصادي الخاص به عند درجة معينة
+ rotate Z ()   <==========>   تقوم الطريقة بتدوير عنصر حول المحور الخاص به عند درجة معينة:
+ transform: rotate3d(   10,        10,        10,          20deg);
+                      axis X      axis Y     axis Z        angle
+ translate3d         <==========>   هي وظيفة تحويل ثلاثية الأبعاد تُستخدم لتحريك عنصر في مساحة ثلاثية الأبعاد. transform: translate3d(-100px, -30px, 50px); 
+ perspective         <==========>  تُستخدم الخاصية لإعطاء عنصر ثلاثي الأبعاد بعض المنظور.
+ perspective         <==========>  تحدد الخاصية مدى بعد الكائن عن المستخدم. لذلك ، ستؤدي القيمة الأقل إلى تأثير ثلاثي الأبعاد أكثر كثافة من القيمة الأعلى.وتوضع في العنصررالاب  perspective: 800px;
+ perspective-origin  <==========>  تحدد الخاصية المكان الذي ينظر فيه المستخدم إلى العنصر ثلاثي الأبعاد.   perspective-origin: left; 
+ perspective: 300px; perspective-origin <==========>  توضع في ااعنصر الاب 
+ transform-style     <==========>    تحدد الخاصية كيفية عرض العناصر المتداخلة في مساحة ثلاثية الأبعاد.
+ flat                   <====> يحدد أن العناصر الفرعية لن تحتفظ بموضعها ثلاثي الأبعاد. هذا هو الافتراضي        transform: rotateY(60deg);
+ preserve-3d	           <====> يحدد أن العناصر الفرعية ستحتفظ بموضعها ثلاثي الأبعاد                            transform-style: preserve-3d;
+ backface-visibility <==========>    تحدد الخاصية ما إذا كان يجب أن يكون الوجه الخلفي للعنصر مرئيًا عند مواجهة المستخدم أم لا.,,,,, هذه الخاصية مفيدة عند تدوير عنصر. يتيح لك اختيار ما إذا كان يجب على المستخدم رؤية الوجه الخلفي أم لا.
+ 
+ 
+ 
+ 
+ #074 - Animation - KeyFrames, Name, Duration
+ #075 - Animation - Iteration Count, Timing Function, Spinner Loading
+ #076 - Animation - Direction, Fill Mode, Play State, Delay
+ #077 - Up And Down Loading Animation Training
+ 
+ @keyframes             <==========>  عند تحديد أنماط  داخل  القاعدة ، ستتغير الرسوم المتحركة تدريجيًا من النمط الحالي إلى النمط الجديد في أوقات معينة. 
+ from {background-color: red;}  في المثال أعلاه ، حددنا متى سيتغير النمط باستخدام الكلمات الرئيسية "من" و "إلى" 
+ to {background-color: yellow;} من الممكن أيضًا استخدام النسبة المئوية. باستخدام النسبة المئوية ، يمكنك إضافة أي عدد تريده من تغييرات النمط.
+ 
+ animation-name            <==========>  يحدد اسم الرسوم المتحركة      animation-name: example;
+ animation-duration        <==========>  ملاحظة: . إذا لم يتم تحديد الخاصية ، فلن تحدث حركة ، لأن القيمة الافتراضية هي 0 ثانية .....تحدد الخاصية المدة التي يجب أن تستغرقها الرسوم المتحركة حتى تكتمل  animation-duration: 4s;
+ 
+ animation-iteration-count <==========> تحدد الخاصية عدد مرات تشغيل الرسم المتحرك.
+                    infinite  <====> يستخدم  القيمة  لجعل الحركة تستمر إلى الأبد لانهائية
+ animation-iteration-count:3; <====> تحدد عدد مرات تشغيل الرسم المتحرك
+ 
+ animation-timing-function <==========>  تحدد الخاصية منحنى سرعة الرسم المتحرك 
+       ease-                  <====>  يحدد رسمًا متحركًا ببداية بطيئة ، ثم سريعة ، ثم تنتهي ببطء (هذا افتراضي)
+       linear-                <====> يحدد رسمًا متحركًا بنفس السرعة من البداية إلى النهاية
+       ease-in-               <====> يحدد رسمًا متحركًا ببداية بطيئة
+       ease-out-              <====> يحدد رسمًا متحركًا بنهاية بطيئة
+       ease-in-out-           <====> يحدد رسمًا متحركًا ببداية ونهاية بطيئين
+       cubic-bezier(n,n,n,n)- <====> يتيح لك تحديد القيم الخاصة بك في دالة مكعب بيزير
+ 
+ animation-fill-mode      <==========>   تحدد الخاصية نمطًا للعنصر الهدف عندما لا يتم تشغيل الرسوم المتحرك قبل أن تبدأ ، أو بعد انتهائها ، أو كليهم 
+                       none  <====>  القيمة الافتراضية. لن تطبق الرسوم المتحركة أي أنماط على العنصر قبل أو بعد تنفيذه
+                  forwards   <====>  سيحتفظ العنصر بقيم النمط التي تم تعيينها بواسطة الإطار الرئيسي الأخير يعتمد على اتجاه الرسوم المتحركة وعدد مرات تكرار الرسوم المتحركة
+                  backwards  <====>  سيحصل العنصر على قيم النمط التي تم تعيينها بواسطة الإطار الرئيسي الأول يعتمد على اتجاه الرسوم المتحركة، ويحتفظ بها أثناء فترة تأخير الرسوم المتحركة
+                       both  <====>  ستتبع الرسوم المتحركة القواعد للأمام وللخلف ، لتوسيع خصائص الحركة في كلا الاتجاهين
+ 
+ animation-delay          <==========>    تحدد الخاصية تأخيرًا لبدء الرسم المتحرك .               animation-delay: 2s;
+ 
+ animation-direction      <==========>    تحدد الخاصية ما إذا كان يجب تشغيل الرسوم المتحركة للأمام أو للخلف أو في دورات بديلة
+                    normal   <====>    يتم تشغيل الرسوم المتحركة كالمعتاد هذا هو الافتراضي
+                    reverse  <====>  (للخلف)   يتم تشغيل الرسوم المتحركة في الاتجاه المعاكس 
+                  alternate  <====>  يتم تشغيل الرسوم المتحركة للأمام أولاً ، ثم للخلف
+         alternate-reverse   <====> يتم تشغيل الرسوم المتحركة بشكل عكسي أولاً ، ثم إلى الأمام
+ 
+ animation-play-state     <==========>    تحدد الخاصية ما إذا كانت الرسوم المتحركة قيد التشغيل أو متوقفة مؤقتًا .
+                    running  <====>   تشغيل 
+                    paused   <====>    توقف  
+ 
+ animation                <==========>    يمكن تحقيق نفس تأثير الحركة على النحو الوارد أعلاه باستخدام خاصية الاختزال:
+ 
+ @keyframes example {
+   from {background-color: red;}
+   to {background-color: yellow;}
+ 
+                           name           duration     timing-function      delay        iteration-count             direction
+                            -                -               -                -                 -                        -
+ animation:              example            5s             linear             2s             infinite                 alternate;
+ 
+ ####################################################################################################################################
+ 
+ #078 - CSS Selectors Reference Part 1
+ #079 - CSS Selectors Reference Part 2
+ #080 - CSS Selectors Reference Part 3
+ #081 - CSS Selectors Reference Part 4
+ #082 - CSS Selectors Reference Part 5
+ 
+ 
+ #id	                     #firstname         Selects the element with id="firstname"
+ .class	                 intro              Selects all elements with class="intro"
+ element.class	         p.intro            Selects only <p> elements with class="intro"
+ *	                     *	                Selects all elements
+ element	                 p	                Selects all <p> elements
+ element,element,..	     div, p             Selects all <div> elements and all <p> elements 
+ element>element	         div > p	        Selects all <p> elements where the parent is a <div> element
+ .class1.class2	        .name1.name2	    Selects all elements with both name1 and name2 set within its class attribute
+ element+element	        div + p	            Selects the first <p> element that is placed immediately after <div> elements
+ element1~element2	    p ~ ul	            Selects every <ul> element that is preceded by a <p> element
+ [attribute]	            [target]	        Selects all elements with a target attribute
+ [attribute=value]	    [target=_blank]	    Selects all elements with target="_blank"
+ [attribute~=value]	    [title~=flower]	    Selects all elements with a title attribute containing the word "flower"
+ [attribute*=value]	   a[href*="w3schools"]	Selects every <a> element whose href attribute value contains the substring "w3schools"
+ [attribute^=value]	   a[href^="https"]	    Selects every <a> element whose href attribute value begins with "https"
+ :first-child	        p:first-child	     Selects every <p> element that is the first child of its parent
+ :last-child             p:last-child	     Selects every <p> element that is the last child of its parent
+ :last-of-type	        p:last-of-type	     Selects every <p> element that is the last <p> element of its parent
+ :first-of-type	        p:first-of-type	     Selects every <p> element that is the first <p> element of its parent
+ :only-child   	        p:only-child	     Selects every <p> element that is the only child of its parent
+ :only-of-type	        p:only-of-type	     Selects every <p> element that is the only <p> element of its parent
+ :not(selector)	        :not(p)	             Selects every element that is not a <p> element
+ :nth-child(n)	        p:nth-child(2)	     Selects every <p> element that is the second child of its parent
+ nth-last-child(n)	    p:nth-last-child(2)	 Selects every <p> element that is the second child of its parent, counting from the last child
+ :nth-of-type(n)   	    p:nth-of-type(2)	 Selects every <p> element that is the second <p> element of its parent
+ :checked	            input:checked	     Selects every checked <input> element
+ :empty	                p:empty	             Selects every <p> element that has no children (including text nodes)
+ :disabled	            input:disabled	     Selects every disabled <input> element
+ :required	            input:required	     Selects input elements with the "required" attribute specified
+ 
+ ####################################################################################################################################
+ 
+ #083 - Media Queries And Responsive Designs Intro
+ #084 - Media Queries And Responsive Designs Standards
+ #085 - Media Queries And Responsive Designs Practice
+ 
+ @media  <==========> تُستخدم القاعدة في استعلامات الوسائط لتطبيق أنماط مختلفة لأنواع / أجهزة وسائط مختلفة.    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    all     =====   افتراضي  تستخدم لجميع انوع أجهزةالوسائط
+    print   =====   تستخدم للطباعه
+    screen  =====   تستخدم لشاشات الكمبيوتر والأجهزة اللوحية والهواتف الذكية وما إلى ذلك.
+    speech  =====   تُستخدم لقراء الشاشة الذين "يقرأون" الصفحة بصوت عالٍ
+ 
+ يمكن استخدام استعلامات الوسائط للتحقق من أشياء كثيرة ، مثل:
+ عرض وارتفاع منفذ العرض
+ عرض الجهاز وارتفاعه
+ الاتجاه هل الجهاز اللوحي / الهاتف في الوضع الأفقي أو الرأسي
+ الدقة
+ 
+ يوضح المثال التالي قائمة ستطفو على يسار الصفحة إذا كان عرض إطار العرض 480 بكسل أو عرضه (إذا كان إطار العرض أقل من 480 بكسل ، فستكون القائمة أعلى المحتوى):
+ 
+ مثال
+ @media screen and {
+   #leftsidebar {width: 200px; float: left;}
+   #main {margin-left: 216px;}
+ }
+  
+ width stander of screens
+ 
+ /* mobile 
+ 
+ @media (max-width: 767px) */
+ 
+ 
+ /* small screens
+ 
+ @media (mix-width: 768px)  and (min-width: 991px) */
+ 
+ 
+ /* meidum screens
+ 
+ @media (min-width: 992px) */
+ 
+ 
+ /* X largs screens
+ 
+ @media (min-width: 1400px) */
+ 
+ 
+ /* custom
+ 
+ @media (max-width: 1199px) 
+ 
+ 
+ 
+ #086 - Create Your Framework
+ 
+ 
+ 
+ 
+ 
+ #87 - CSS Global Values
+ 
+ inherit   <==========>   تحدد الكلمة الأساسية أن الخاصية يجب أن ترث قيمتها من عنصرها الأصلي
+ 
+ initial   <==========>   يتم استخدام الكلمة الأساسية لتعيين خاصية إلى قيمتها الافتراضية
+ 
+ unset     <==========>   يغير جميع الخصائص المطبقة على العنصر أو أصل العنصر إلى قيمته الأصلية إذا كانت قابلة للتوريث أو إلى قيمتها الأولية إذا لم تكن كذلك
+ 
+ 
+ 
+ 
+ #88 - The End And How To Master HTML And CSS
+ 
+ 
+ 
+ */
+ 
+ 
+ /* 
+   جميع الطرق لتوسيط العناصر أفقيا وعرضيا داخل العنصر الأب
+ 
+ 
+ Negative Margin            <==========>   margin: 40px auto;
+ position: absolute;        <==========>   margin-top: -37.5px; margin-left: -75px; left: 50%;   top: 50%;
+ transform                  <==========>   translate(-50%, -50%); 
+ Flex Box                   <==========>   display: flex; justify-content: center;align-items: center; */
+
+
+
+
+
+
